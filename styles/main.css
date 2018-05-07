@@ -1,0 +1,81 @@
+body {
+  padding-bottom: 5rem;
+}
+
+nav {
+  font-family: "Signika", sans-serif;
+  color: #fff;
+  font-size: 18px;
+  font-weight: lighter;
+}
+
+header {
+  background: url(../images/landing-page-hero-image.png) center / cover;
+  height: 60vh;
+  justify-content: center;
+  text-align: center;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: "Signika", sans-serif;
+  color: #fff;
+}
+
+h1, h2 {
+  font-weight: bold;
+}
+
+h3, h4, h5 {
+  font-weight: normal;
+}
+
+h1 {
+  font-size: 48px;
+  line-height: 60px;
+}
+
+h2 {
+  font-size: 36px;
+  line-height: 42px;
+}
+
+h3 {
+  font-size: 30px;
+  line-height: 42px;
+}
+
+h4 {
+  font-size: 24px;
+  line-height: 36px;
+}
+
+h5 {
+  font-size: 20px;
+  line-height: 26px;
+}
+
+p, ul {
+  font-family: "Open Sans", sans-serif;
+  color: #000;
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 24px;
+}
+
+button {
+  background-color: #DE9B43;
+  width: 258px;
+  height: 50px;
+  font-family: "Signika", sans-serif;
+  color: #fff;
+  font-size: 20px;
+}
+
+footer {
+  height: 55px;
+  background: linear-gradient(#43A6DE, #1D6891);
+  font-family: "Signika", sans-serif;
+  color: #000;
+  font-size: 13px;
+  font-weight: lighter;
+}
