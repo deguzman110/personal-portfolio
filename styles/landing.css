@@ -1,0 +1,96 @@
+header {
+  height: 650px;
+  width: 100%;
+  margin: auto;
+  background: url(../images/landing-page-hero-image.png) center / cover;
+  display: inline-block;
+}
+
+header h1, h3 {
+  display: inline-block;
+  text-align: center;
+  width: 100%;
+  max-width: none;
+}
+
+main section:last-child {
+  padding: 0;
+}
+
+main section:last-child div{
+  background: url(../images/contact-me.png) center / cover;
+  display: inline-block;
+  padding: 10px;
+}
+
+main section:last-child div h3 {
+  font-weight: 700;
+}
+
+.projects, .skills {
+  display: flex;
+  flex-flow: wrap;
+}
+
+.projects > div, .skills > div {
+  flex: 1;
+}
+
+.projects > div h3 {
+  margin: 0;
+  text-align: center;
+  background: #333333;
+}
+
+.projects > div h4 {
+  margin: 10px;
+  text-align: center;
+  padding: 30px;
+}
+
+.projects img {
+  display: block;
+  margin: 50px auto;
+}
+
+.projects > div button {
+  display: block;
+  margin: 50px;
+  align-self: center;
+}
+
+#blocjams {
+  background: linear-gradient(to right, #5A2F53, #9E588A, #000000);
+
+}
+
+#briefcase {
+  background: linear-gradient(#347075 100%, #347075 50%);
+}
+
+#briefcase img {
+  padding-bottom: 20px;
+}
+
+.about h3 {
+  color: #000;
+  text-align: center;
+}
+
+.skills h4 {
+  color: #000;
+  text-align: center;
+}
+
+.skills img {
+  padding: 50px 100px;
+}
+
+.about > div ul {
+  padding-top: 20px;
+  line-height: 48px;
+  max-width: 85%;
+}
+.contact-footer > div h3, h4 {
+  color: #fff;
+}

@@ -1,5 +1,9 @@
-body {
-  padding-bottom: 5rem;
+/* Style Reset */
+html body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
 }
 
 nav {
@@ -7,13 +11,33 @@ nav {
   color: #fff;
   font-size: 18px;
   font-weight: lighter;
+  height: 58px;
+  padding: 20px;
 }
 
-header {
-  background: url(../images/landing-page-hero-image.png) center / cover;
-  height: 60vh;
-  justify-content: center;
-  text-align: center;
+nav img {
+  float: left;
+  margin: 20px;
+}
+
+.nav-menu li {
+  float: right;
+  display: inline;
+  list-style-type: none;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+  padding: 0px 30px;
+}
+
+a:hover {
+  color: #000;
+}
+
+a:active {
+  color: #DE9B43;
 }
 
 h1, h2, h3, h4, h5 {
@@ -69,13 +93,26 @@ button {
   font-family: "Signika", sans-serif;
   color: #fff;
   font-size: 20px;
+  box-shadow: 0px 4px 4px 0 rgba(0, 0, 0, 0.25);
 }
 
 footer {
   height: 55px;
   background: linear-gradient(#43A6DE, #1D6891);
+}
+
+#copyright {
+  float: left;
+  display: inline;
+  padding: 20px 0px 0px 10px;
   font-family: "Signika", sans-serif;
   color: #000;
   font-size: 13px;
-  font-weight: lighter;
+  font-weight: 400;
+}
+
+#footer-icons {
+  float: right;
+  display: inline;
+  padding-top: 15px;
 }
