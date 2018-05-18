@@ -1,0 +1,300 @@
+/* header */
+
+header {
+  height: 500px;
+  width: 100%;
+  background: linear-gradient(#347075, #000000);
+  display: inline-block;
+}
+
+header h1 {
+  margin-left: 5%;
+  padding-top: 5%;
+  padding-bottom: 3%;
+  max-width: 90%;
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 60px;
+  color: #fff;
+  text-align: center;
+}
+
+header h3 {
+  margin-left: 5%;
+  padding-bottom: 3%;
+  max-width: 90%;
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 40px;
+  color: #fff;
+  text-align: center;
+}
+
+header button {
+  border-style: none;
+  width: 90%;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+/* overview */
+
+/* Mobile Overview Sliders
+
+ .sliding-overview * {
+  box-sizing: border-box;
+  max-width: 100%;
+  position: relative;
+  margin: auto;
+}
+
+.prev, .next {
+  curser: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding 16px;
+  color: #347075;
+  font-weight: 400;
+  font-size: 64px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from { opacity: .4 }
+  to { opacity: 1 }
+}
+
+*/
+
+.sliding-overview > div {
+  max-width: 100%;
+  min-height: 900px;
+  background-color: #f0f0f0;
+  text-align: center;
+  margin: 30px 0;
+}
+
+.sliding-overview > div h3 {
+  padding: 40px 0;
+}
+
+.sliding-overview > div li {
+  line-height: 3em;
+}
+
+.problem, .solution {
+  max-width: 100%;
+  margin-bottom: 30px;
+  background-color: #f0f0f0;
+}
+
+.problem h5, .solution h5 {
+  font-size: 0.75em;
+  margin-left: 3%;
+  padding: 3% 0;
+  text-align: left;
+  color: #999999;
+}
+
+.problem p, .solution p {
+  line-height: 100px;
+  text-align: left;
+  padding: 3%;
+}
+
+.problem h3, .solution h3 {
+  margin-left: 3%;
+  text-align: left;
+}
+
+/* process */
+
+.process > div, .information-architecture > div, .visual-design-branding > div, .clickable-prototype-testing, .conclusion, .projects-carousel {
+  padding-left: 3%;
+  padding: 30px;
+}
+
+.process h3, .information-architecture > h3, .visual-design-branding > div h3, .conclusion, .projects-carousel h3 {
+  padding-bottom: 5%;
+}
+
+.process > div h4, .information-architecture > div h4, .visual-design-branding > div h4, .clickable-prototype-testing h4 {
+  padding-bottom: 3%;
+}
+
+.process > div p, .information-architecture > div p, .visual-design-branding div p, .clickable-prototype-testing p, .conclusion p {
+  line-height: 2em;
+}
+
+.process > div h5, .information-architecture > div h5, .visual-design-branding > div h5 {
+  font-size: 1em;
+  font-weight: 600;
+  letter-spacing: 0;
+  line-height: 3em;
+}
+
+.process > div li, .information-architecture > div li, .conclusion li {
+  margin-left: 10%;
+  line-height: 1em;
+  list-style-type: disc;
+  font-weight: 600;
+  padding-bottom: 3%;
+}
+
+.process > div button, .information-architecture > div button, .visual-design-branding > div button, .prototype-links button {
+  border-style: none;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 90%;
+}
+
+.process h3, .process h4, .process h5, .process li, .process p, .information-architecture h4, .information-architecture p, .information-architecture li, .visual-design-branding h3, .visual-design-branding h4, .visual-design-branding p, .clickable-prototype-testing h4, .clickable-prototype-testing p, .projects-carousel h3 {
+  color: #fff;
+}
+
+/* competitive analysis */
+
+.competitive-analysis {
+    background: linear-gradient(rgba(52, 112, 117, 1),rgba(52, 112, 117, 0.75));
+}
+
+.competitor-logos {
+  text-align: center;
+}
+
+.competitor-logos img {
+  display: inline-block;
+  margin: 5%;
+  padding: 0 5%;
+}
+
+/* user research */
+
+.user-research {
+    background: linear-gradient(rgba(51, 51, 51, 1),rgba(51, 51, 51, 0.75));
+}
+
+/* personas */
+
+.personas {
+    background: linear-gradient(rgba(52, 112, 117, 1),rgba(52, 112, 117, 0.75));
+}
+
+/* personas image hidden in mobile version */
+
+.personas img {
+  display: none;
+}
+
+/* user stories & flows */
+
+.information-architecture {
+    background: linear-gradient(rgba(51, 51, 51, 1),rgba(51, 51, 51, 0.75));
+}
+
+.user-stories-flows img {
+  display: inline-block;
+  margin-left: 5%;
+  margin-right: 5%;
+  width: 90%;
+}
+
+/* visual design & branding */
+
+.visual-design-branding {
+    background: linear-gradient(rgba(52, 112, 117, 1),rgba(52, 112, 117, 0.75));
+}
+
+/* ***NEED TO create bigger wireframe images to place here*** */
+.visual-design-branding > div img {
+ display: inline-block;
+ margin-left: 5%;
+ margin-right: 5%;
+ width: 90%;
+}
+
+/* briefcase branding images/logo hidden in mobile version */
+
+#briefcase-branding {
+  display: none;
+}
+
+/* clickable prototype & testing */
+.clickable-prototype-testing {
+    background: linear-gradient(rgba(51, 51, 51, 1),rgba(51, 51, 51, 0.75));
+}
+
+.prototype-links {
+  text-align: center;
+}
+
+/* desktop prototype hidden in mobile version */
+
+#desktop-prototype {
+  display: none;
+}
+
+#mobile-prototype img {
+  display: inline-block;
+  margin: 5% 0;
+}
+
+.emphasized {
+  font-style: italic;
+  font-weight: 700;
+}
+
+.projects-carousel {
+  background: linear-gradient(#43A6DE, #1D6891);
+  text-align: center;
+}
+
+/* Images to be resized and styled */
+
+.projects-carousel img {
+  display: inline;
+}
+
+footer {
+  background: #fff;
+}
+
+.copyright {
+  color: #000;
+}

@@ -48,9 +48,12 @@ main section:last-child div h3 {
   padding: 30px;
 }
 
-.projects img {
+.projects > div img {
   display: block;
-  margin: 50px auto;
+  width: 100%;
+  border: none;
+  margin-left: 50%;
+
 }
 
 .projects > div button {

@@ -10,7 +10,9 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans|Signika:400,700" rel="stylesheet">
 
     <!-- Stylesheets -->
-    <!-- <link rel="stylesheet" href="styles/main.css"> -->
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/project1.css">
 
     <!-- Note: <br> Used in raw HTML before images for clarity in viewing without styling, remove from final HTML output -->
 
@@ -23,51 +25,70 @@
             <img src="images/logo.png" alt"Anthony DeGuzman">
           </a>
           <ul class="nav-menu">
-            <li><a href="About-Link-Here">About</a></li>
-            <li><a href="Resume-Link-Here">Resume</a></li>
             <li><a href="Contact-Link-Here">Contact</a></li>
+            <li><a href="Resume-Link-Here">Resume</a></li>
+            <li><a href="About-Link-Here">About</a></li>
           </ul>
       </nav>
     <h1>Briefcase</h1>
     <h3>Briefcase is a cloud-based storage service that utilizes collaboration and presentation tools to increase productivity for the modern-day worker.</h3>
+    <!-- Briefcase Image: Not used in mobile view
+    <div class="project-image">
+      <img src="images/briefcase-hero-image.png" alt"Briefcase Image">
+    </div> -->
     <button><a href="https://invis.io/VZIQDH9E297">View Prototype</a></button>
   </header>
 
   <main>
     <section class="overview">
+      <script src="sliding-overview.js"></script>
+      <div class="sliding-overview">
+        <div class="roles">
+          <h3>Design Roles</h3>
+          <p><ul>
+            <li>UX Design</li>
+            <li>Visual Design</li>
+            <li>Branding</li>
+          </ul></p>
+        </div>
 
-      <div class="roles">
-        <h3>Design Roles</h3>
-        <p><ul>
-          <li>UX Design</li>
-          <li>Visual Design</li>
-          <li>Branding</li>
-        </ul></p>
-      </div>
+        <div class="deliverables">
+          <h3>Design Deliverables</h3>
+          <p><ul>
+            <li>Competitive Analysis</li>
+            <li>User Personas, Stories, & Flows</li>
+            <li>Content Strategy</li>
+            <li>Wireframes & Clickable Prototype</li>
+            <li>User / Preference Testing</li>
+            <li>Branding Concept & Identity</li>
+          </ul></p>
+        </div>
 
-      <div class="deliverables">
-        <h3>Design Deliverables</h3>
-        <p><ul>
-          <li>Competitive Analysis</li>
-          <li>User Personas, Stories, & Flows</li>
-          <li>Content Strategy</li>
-          <li>Wireframes & Clickable Prototype</li>
-          <li>User / Preference Testing</li>
-          <li>Branding Concept & Identity</li>
-        </ul></p>
-      </div>
+        <div class="tools">
+          <h3>Tools Used</h3>
+          <p><ul>
+            <li>Sketch</li>
+            <li>Figma</li>
+            <li>InVision</li>
+            <li>Google Forms</li>
+            <li>Balsamiq</li>
+            <li>UsabilityHub</li>
+          </ul></p>
+        </div>
 
-      <div class="tools">
-        <h3>Tools Used</h3>
-        <p><ul>
-          <li>Sketch</li>
-          <li>Figma</li>
-          <li>InVision</li>
-          <li>Google Forms</li>
-          <li>Balsamiq</li>
-          <li>UsabilityHub</li>
-        </ul></p>
-      </div>
+        <!-- Mobile Next/Previous arrows
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        -->
+
+        <!-- Mobile Dots/Circles
+        <div id="mobile-dots">
+          <span class="dot" onclick="roles"></span>
+          <span class="dot" onclick="deliverables"></span>
+          <span class="dot" onclick="tools"></span>
+        </div>
+      -->
+    </div>
 
       <div class="problem">
         <h5>Problem</h5>
@@ -83,16 +104,17 @@
     </section>
 
     <section class="process">
-      <h3>Process</h3>
       <div class="competitive-analysis">
+        <h3>Process</h3>
         <h4>Competitive Analysis</h4>
-        <img src="images/google-drive-logo.png">
-        <img src="images/dropbox-logo.png">
-        <img src="images/box-logo.png">
+        <div class="competitor-logos">
+          <img src="images/google-drive-logo.png">
+          <img src="images/dropbox-logo.png">
+          <img src="images/box-logo.png">
+        </div>
         <p>To create a cloud-based storage service, I began by analyzing current existing services- Google Drive, Dropbox, and Box through SWOT Analysis. I also reviewed the user flows of common tasks between the services, which were onboarding, saving an item (uploading/adding an item), and organizing an item. Through a SWOT Analysis of these potential competitors, I recognized common patterns in user flows, which helped to make their products more user-friendly. However, I also recognized areas where flows or features can be improved and optimized.</p>
-
-        <p>Areas Worth Consideration:</p>
-        <p><ul>
+        <br>
+        <p><ul><h5>Areas Worth Consideration:</h5>
           <li>Amount of free space</li>
           <li>Convenience</li>
           <li>UI Design</li>
@@ -111,20 +133,23 @@
             <li>61% use Dropbox and iCloud</li>
             <li>27.8% use OneDrive</li>
           </ul>
+        <br>
         <p>Convenience and need for space were the two major reasons people utilize cloud storage services.</p>
+        <br>
         <p> 19% of Respondents do NOT use cloud storage services, and prefer using USB or external hard drives due to security/privacy concerns.</p>
         <button><a href="Goole-Survey-Link-Here">View Survey</a></button>
       </div>
 
       <div class="personas">
         <h4>Personas</h4>
-        <p>After analyzing data from the user surveys, and conducting user interviews with a small number of respondents, I was able to create three personas:
+        <p>After analyzing data from the user surveys, and conducting user interviews with a small number of respondents, I was able to create three personas:</p>
+        <br>
           <ul>
             <li>A creative, collaborative freelancer looking to be more productive when working with others</li>
             <li>A student/business administrator in training looking to access files on the go</li>
             <li>A working father, looking to centralize his work securely</li>
           </ul>
-        These personas were kept in mind throughout the design of Briefcase.</p>
+        <p>These personas were kept in mind throughout the design of Briefcase.</p>
         <button><a href="Personas-Link-Here">View Personas</a></button>
         <img src="images/personas.png">
       </div>
@@ -133,7 +158,8 @@
     <section class="information-architecture">
       <div class="user-stories-flows">
         <h4>User Stories & Flows</h4>
-        <p>With the user personas in mind, I began mapping out the user stories for our product, which began with the initial name of BlocBox.</p>
+        <p>With the user personas in mind, I began mapping out the user stories for our product, which began with the initial name of <span class="emphasized">BlocBox</span>.</p>
+        <br>
         <p>Some of the key high-priority user stories included:
           <ul>
             <li>The onboarding process for a new user</li>
@@ -154,7 +180,7 @@
     <section class="visual-design-branding">
       <div class="wireframes">
         <h4>Wireframes</h4>
-        <p>Wireframes for BlocBox were first sketched on paper to determine ideal sizing for different page elements. The first sketches were rapid iterations to help generate more ideas for icons, logos, and what features I wanted to highlight for the product.</p>
+        <p>Wireframes for <span class="emphasized">BlocBox</span> were first sketched on paper to determine ideal sizing for different page elements. The first sketches were rapid iterations to help generate more ideas for icons, logos, and what features I wanted to highlight for the product.</p>
         <br><img src="images/wireframes.png">
 
         <p>The wireframes were eventually further expanded and detailed within Balsamiq to give some insight to potential sizing of fonts, spacing of icons, logos, and more. Wireframes are available for review upon request. The first high-fidelity mockups were then created in Sketch with some graphic elements, but no branding established. Final mockups were created in Figma.</p>
@@ -163,23 +189,33 @@
 
       <div class="branding">
         <h4>Branding Concept & Identity</h4>
-        <p>In the middle of creating wireframes and conducting performance testing, Blocbox was undergoing finding its identity. I conducted some mind mapping, thinking of the main purpose of BlocBox. After searching for synonyms for "box", which included the words "case", "crate", "chest", "container", and "pack", I immediately thought of a briefcase and a backpack. Many commuters have a briefcase or backpack that holds their work on a daily basis.</p>
-        <p>With that said, Briefcase was born.</p>
+        <p>In the middle of creating wireframes and conducting performance testing, <span class="emphasized">BlocBox</span> was undergoing finding its identity. I conducted some mind mapping, thinking of the main purpose of BlocBox. After searching for synonyms for "box", which included the words "case", "crate", "chest", "container", and "pack", I immediately thought of a briefcase and a backpack. Many commuters have a briefcase or backpack that holds their work on a daily basis.</p>
+        <br>
+        <p>With that said, <span class="emphasized">Briefcase</span> was born.</p>
+        <br>
         <p>After some rapid iterations of logos, I settled on a logo of a briefcase with a cloud in the middle. I settled on Briefcase as the name of the product as I wanted to convey a sense of productivity and convenience with the product, while still being secure. A briefcase in the real world captures these concepts.</p>
-        <br><img src="images/branding.png">
-        <br><img src="images/briefcase-logo.png">
-        <p>Briefcase Primary Logo</p>
-        <br><button><a href="Style-Guide-Link-Here">View Style Guide</a></button>
+        <span id="briefcase-branding">
+          <img src="images/branding.png">
+          <img src="images/briefcase-logo.png">
+          Briefcase Primary Logo
+        </span>
+        <button><a href="Style-Guide-Link-Here">View Style Guide</a></button>
       </div>
     </section>
 
     <section class="clickable-prototype-testing">
       <h4>Clickable Prototype & Preference Testing</h4>
       <p>Through numerous versions of different screens, I eventually arrived at a clickable prototype for usability testing. While doing usability testing, I found some small, but subtle things that had to be changed prior to release, but also found edits and additional features that could be added in a future release. I also conducted some preference testing for different elements based on results and feedback. All preference testing was completed using UsabilityHub.</p>
-      <img src="images/macbook-mockup.png">
-      <button><a href="https://invis.io/VZIQDH9E297">View Desktop Prototype</a></button>
-      <img src="images/iphone-mockup.png">
-      <button><a href="https://invis.io/RVIQEIZ8C95">View Mobile Prototype</a></button>
+      <div class="prototype-links">
+        <span id="desktop-prototype">
+          <img src="images/macbook-mockup.png">
+          <button><a href="https://invis.io/VZIQDH9E297">View Desktop Prototype</a></button>
+        </span>
+        <span id="mobile-prototype">
+          <img src="images/iphone-mockup.png">
+          <button><a href="https://invis.io/RVIQEIZ8C95">View Mobile Prototype</a></button>
+        </span>
+      </div>
     </section>
 
     <section class="conclusion">
@@ -192,11 +228,11 @@
           <li>Though a product's MVP may be completed, continue brainstorming, iterating, and designing for the future of the product</li>
         </ul></p>
 
-      <p>Briefcase is a project that has ultimately helped me become more confident in my abilities as a designer. Every single step in the design process is an important and necessary step in order to bring an idea to life. It is important to test out your ideas as a designer to understand if it will work, or if changes will need to be made along the way. I had to understand what changes needed to be made so that the MVP will be the best product it can possibly be upon release. Prioritization of user stories and flows helps to make this possible.</p>
-
+      <p><span class="emphasized">Briefcase</span> is a project that has ultimately helped me become more confident in my abilities as a designer. Every single step in the design process is an important and necessary step in order to bring an idea to life. It is important to test out your ideas as a designer to understand if it will work, or if changes will need to be made along the way. I had to understand what changes needed to be made so that the MVP will be the best product it can possibly be upon release. Prioritization of user stories and flows helps to make this possible.</p>
+      <br>
       <p>In the end, relating everything back to the user is extremely important, and I tried to keep my personas in mind with every design decision i made. I wanted to make sure Amy didn't have to play tag through emails with collaborators, plus that ron had a product he can refer to on the go, and that Steve had something he can organize his content with.</p>
-
-      <p>In considering the future of Briefcase past the MVP, I would focus on adding the user stories omitted in the initial release, as well as adding click and drag functionality. If users wished as well, I'd see further development of the mobile web app past view-only capability, provided there is a strong enough desire for it.</p>
+      <br>
+      <p>In considering the future of <span class="emphasized">Briefcase</span> past the MVP, I would focus on adding the user stories omitted in the initial release, as well as adding click and drag functionality. If users wished as well, I'd see further development of the mobile web app past view-only capability, provided there is a strong enough desire for it.</p>
     </section>
 
 
