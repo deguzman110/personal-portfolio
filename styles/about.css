@@ -1,0 +1,38 @@
+header {
+  height: 500px;
+  width: 100%;
+  background: url(../images/about-hero-image.png) center / cover;
+  display: inline-block;
+}
+
+header h1 {
+  margin-left: 3%;
+  margin-top: 2%;
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 60px;
+  color: #fff;
+  text-align: left
+}
+
+header h2 {
+  margin-left: 3%;
+  margin-top: 5%;
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 40px;
+  color: #fff;
+  text-align: left
+}
+
+.about-intro {
+  margin-bottom: 3%;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: 3%;
+  text-align: center;
+}
+
+.about-intro img {
+  padding: 2%;
+}

@@ -1,99 +1,160 @@
 header {
-  height: 650px;
+  height: 500px;
   width: 100%;
-  margin: auto;
   background: url(../images/landing-page-hero-image.png) center / cover;
   display: inline-block;
 }
 
-header h1, h3 {
-  display: inline-block;
-  text-align: center;
-  width: 100%;
-  max-width: none;
+header h1 {
+  margin-left: 35%;
+  margin-bottom: 2%;
+  max-width: 600px;
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 60px;
+  color: #fff;
+  text-align: left;
 }
 
-main section:last-child {
-  padding: 0;
+header h2 {
+  margin-left: 35%;
+  max-width: 600px;
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 40px;
+  color: #fff;
+  text-align: left;
 }
 
-main section:last-child div{
-  background: url(../images/contact-me.png) center / cover;
-  display: inline-block;
-  padding: 10px;
+ /* header animation */
+
+@-webkit-keyframes "fade" {
+  0% { opacity: 0; transform: translateY(-15px); }
+  25% { opacity: 0; transform: translateY(-7.5px); }
+  50% { opacity: 1; transform: translateY(0px); }
+  75% { opacity: 0; transform: translateY(7.5px); }
+  100% { opacity: 0; transform: translateY(15px); }
+}
+.changing-word span {
+  color: #DE9B43;
+  display: inline;
+  position: absolute;
+  -webkit-animation: "fade" 10s infinite;
+  opacity: 0;
 }
 
-main section:last-child div h3 {
-  font-weight: 700;
+.changing-word span:nth-child(2) {
+  -webkit-animation-delay: 2s;
 }
 
-.projects, .skills {
-  display: flex;
-  flex-flow: wrap;
+.changing-word span:nth-child(3) {
+  -webkit-animation-delay: 4s;
 }
 
-.projects > div, .skills > div {
-  flex: 1;
+.changing-word span:nth-child(4) {
+  -webkit-animation-delay: 6s;
 }
 
-.projects > div h3 {
-  margin: 0;
-  text-align: center;
-  background: #333333;
+.changing-word span:nth-child(5) {
+  -webkit-animation-delay: 8s;
 }
 
-.projects > div h4 {
-  margin: 10px;
-  text-align: center;
-  padding: 30px;
+#post-change {
+  text-indent: 170px;
+  display: inline;
+  position: absolute;
+}
+
+/* projects */
+
+.projects {
+  display: block;
+}
+
+.projects > div {
+  padding-bottom: 30px;
 }
 
 .projects > div img {
-  display: block;
-  width: 100%;
   border: none;
-  margin-left: 50%;
+  display: block;
+  margin: 0 auto;
+  padding-top: 30px;
+}
 
+.projects > div h4 {
+  color: #fff;
+  margin: 10px;
+  text-align: center;
+  font-weight: 400;
+  padding: 30px;
 }
 
 .projects > div button {
   display: block;
-  margin: 50px;
-  align-self: center;
+  border-style: none;
+  width: 90%;
+  margin-left: 5%;
 }
 
 #blocjams {
   background: linear-gradient(to right, #5A2F53, #9E588A, #000000);
-
 }
 
 #briefcase {
   background: linear-gradient(#347075 100%, #347075 50%);
 }
 
-#briefcase img {
-  padding-bottom: 20px;
+/* my process */
+
+.my-process {
+  margin: 30px 50px;
 }
 
-.about h3 {
-  color: #000;
+.my-process h3, h5 {
   text-align: center;
+  margin: 30px;
 }
 
-.skills h4 {
-  color: #000;
-  text-align: center;
+.my-process img {
+  border: none;
+  display: block;
+  margin: 0 auto;
 }
 
-.skills img {
-  padding: 50px 100px;
+.my-process p {
+  margin-top: 30px;
+  margin-bottom: 50px;
 }
 
-.about > div ul {
-  padding-top: 20px;
-  line-height: 48px;
-  max-width: 85%;
+
+/* contact info */
+
+.contact-footer {
+  height: 440px;
+  width: 100%;
+  background: url(../images/footer-image.png) center / cover;
+  background-repeat: no-repeat;
+  display: inline-block;
 }
-.contact-footer > div h3, h4 {
+
+.contact-footer h3, h4 {
   color: #fff;
+  text-align: center;
+  margin: 50px;
+  font-size: 48px;
+  font-weight: 600;
+}
+
+.contact-footer h4 {
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 60px;
+}
+
+.contact-footer button {
+  display: block;
+  border-style: none;
+  width: 90%;
+  margin-left: 5%;
 }
