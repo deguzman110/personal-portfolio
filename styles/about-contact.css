@@ -36,3 +36,19 @@ header h2 {
 .about-intro img {
   padding: 2%;
 }
+
+#submit {
+  border-style: none;
+  background-color: #DE9B43;
+  height: 40px;
+  color: #fff;
+}
+
+#submit:hover {
+  color: #000;
+}
+
+#thank-you {
+  text-align: center;
+  margin: 5% auto;
+}

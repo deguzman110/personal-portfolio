@@ -1,4 +1,4 @@
-/*** typography ***/
+/* navigation */
 nav {
   font-family: "Signika", sans-serif;
   font-weight: 300;
@@ -8,14 +8,19 @@ nav {
   padding: 20px;
 }
 
+nav img {
+  float: left;
+}
+
 .nav-menu a {
   color: #fff;
   float: right;
   display: inline;
 }
 
+/* links and buttons */
+
 a {
-  color: #000;
   text-decoration: none;
   padding: 0px 30px;
 }
@@ -31,6 +36,12 @@ a:active {
 button a {
   color: #fff;
 }
+
+button a:active {
+  color: #1D6891;
+}
+
+/* headings and text */
 
 h1, h2, h3, h4, h5 {
   font-family: "Signika", sans-serif;
@@ -81,10 +92,6 @@ p, ul {
 }
 
 /*** structure ***/
-
-nav img {
-  float: left;
-}
 
 button, .form button {
   background-color: #DE9B43;

@@ -14,6 +14,9 @@
     <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="styles/project1.css">
 
+    <!-- Scripts -->
+    <script src="scripts/carousel.js"></script>
+
     <!-- Note: <br> Used in raw HTML before images for clarity in viewing without styling, remove from final HTML output -->
 
   </head>
@@ -239,12 +242,32 @@
 
     <section class="projects-carousel">
         <h3>Want to see more?</h3>
-        <!-- Note: Need to make images resize accordingly in carousel when selected in css -->
-        <img src="images/left-arrow.png">
-        <img src="images/blocjams-carousel.png">
-        <img src="images/briefcase-carousel.png">
-        <img src="images/coming-soon.png">
-        <img src="images/right-arrow.png">
+
+        <div class="project-slides-container">
+          <div class="project-slide">
+            <a href="https://ad-bloc-jams.netlify.com/"><img src="images/blocjams-carousel.png"></a>
+            <div class="project-text"></div>
+          </div>
+
+          <div class="project-slide">
+            <a href="project1.html"><img src="images/briefcase-carousel.png"></a>
+            <div class="project-text"></div>
+          </div>
+
+          <div class="project-slide">
+            <img src="images/coming-soon.png">
+            <div class="project-text"></div>
+          </div>
+
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+          <div class="radio-buttons">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+          </div>
+        </div>
     </section>
   </main>
 
