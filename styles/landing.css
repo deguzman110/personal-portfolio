@@ -102,7 +102,7 @@ header h2 {
 }
 
 #briefcase {
-  background: linear-gradient(#347075 100%, #347075 50%);
+  background: linear-gradient(rgba(52,112,117,1), rgba(52,112,117,0.5));
 }
 
 /* my process */
