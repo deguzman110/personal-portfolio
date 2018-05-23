@@ -1,8 +1,5 @@
 header {
-  height: 500px;
-  width: 100%;
   background: url(../images/about-hero-image.png) center / cover;
-  display: inline-block;
 }
 
 header h1 {
@@ -25,6 +22,30 @@ header h2 {
   text-align: left
 }
 
+header h3 {
+  color: #fff;
+  max-width: 500px;
+}
+
+h3 {
+  margin: 3%;
+}
+
+p {
+  margin-left: 3%;
+}
+
+.tools-and-tech img {
+  margin: 3%;
+}
+
+.outside-design ul {
+  margin: 3%;
+  line-height: 30px;
+}
+
+/* about page styles */
+
 .about-intro {
   margin-bottom: 3%;
   margin-left: 5%;
@@ -36,6 +57,24 @@ header h2 {
 .about-intro img {
   padding: 2%;
 }
+
+#leo h3 {
+  color: rgba(0,0,0,0.40);
+}
+
+.contact-footer {
+  background: linear-gradient(#43A6DE, #1D6891);
+}
+
+footer {
+  background: #fff;
+}
+
+.copyright {
+  color: #000;
+}
+
+/* contact page styles */
 
 #submit {
   border-style: none;

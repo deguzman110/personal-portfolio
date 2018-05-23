@@ -41,7 +41,7 @@ button a:active {
   color: #1D6891;
 }
 
-/* headings and text */
+/* Typography */
 
 h1, h2, h3, h4, h5 {
   font-family: "Signika", sans-serif;
@@ -50,6 +50,7 @@ h1, h2, h3, h4, h5 {
 
 h1, h2 {
   font-weight: 600;
+  color: #fff;
 }
 
 h3, h4, h5 {
@@ -57,13 +58,17 @@ h3, h4, h5 {
 }
 
 h1 {
-  font-size: 24px;
-  line-height: 24px;
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 60px;
+  max-width: 600px;
 }
 
 h2 {
-  font-size: 16px;
-  line-height: 16px;
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 40px;
+  max-width: 600px;
 }
 
 h3 {
@@ -73,7 +78,8 @@ h3 {
 
 h4 {
   font-size: 18px;
-  line-height: 24px;
+  font-weight: 300;
+  line-height: 50px;
 }
 
 h5 {
@@ -87,19 +93,157 @@ p, ul {
   font-family: "Open Sans", sans-serif;
   color: #000;
   font-size: 16px;
-  font-weight: normal;
   line-height: 24px;
+}
+
+i {
+  font-style: italic;
 }
 
 /*** structure ***/
 
+header {
+  height: 500px;
+  width: 100%;
+  display: inline-block;
+}
+
 button, .form button {
   background-color: #DE9B43;
+  border-style: none;
   width: 300px;
   height: 2em;
   box-shadow: 0px 4px 4px 0 rgba(0, 0, 0, 0.25);
   font-family: "Signika", sans-serif;
   font-size: 1.85em;
+}
+
+/* landing page styling */
+
+/* header animation */
+
+@-webkit-keyframes "fade" {
+ 0% { opacity: 0; transform: translateY(-15px); }
+ 25% { opacity: 0; transform: translateY(-7.5px); }
+ 50% { opacity: 1; transform: translateY(0px); }
+ 75% { opacity: 0; transform: translateY(7.5px); }
+ 100% { opacity: 0; transform: translateY(15px); }
+}
+
+.changing-word span {
+ color: #DE9B43;
+ display: inline;
+ position: absolute;
+ -webkit-animation: "fade" 12s infinite;
+ opacity: 0;
+}
+
+.changing-word span:nth-child(2) {
+ -webkit-animation-delay: 3s;
+}
+
+.changing-word span:nth-child(3) {
+ -webkit-animation-delay: 6s;
+}
+
+.changing-word span:nth-child(4) {
+ -webkit-animation-delay: 9s;
+}
+
+#post-change {
+ text-indent: 170px;
+ display: inline;
+ position: absolute;
+}
+
+/* my process */
+
+.my-process {
+  margin: 30px 50px;
+}
+
+.my-process h3, h5 {
+  text-align: center;
+  margin: 30px;
+}
+
+.my-process img {
+  border: none;
+  display: block;
+  margin: 0 auto;
+}
+
+.my-process p {
+  margin-top: 30px;
+  margin-bottom: 50px;
+}
+
+/* projects */
+
+.projects {
+ display: block;
+}
+
+.projects > div {
+ padding-bottom: 30px;
+}
+
+.projects > div img {
+ border: none;
+ display: block;
+ margin: 0 auto;
+ padding-top: 30px;
+}
+
+.projects > div h4 {
+ color: #fff;
+ margin: 10px;
+ text-align: center;
+ font-weight: 400;
+ padding: 30px;
+}
+
+.projects > div button {
+ display: block;
+ border-style: none;
+ width: 90%;
+ margin-left: 5%;
+}
+
+/* contact info */
+
+.contact-footer {
+  height: 440px;
+  width: 100%;
+  display: inline-block;
+}
+
+.contact-footer h3, h4 {
+  color: #fff;
+  text-align: center;
+  margin: 50px;
+  font-size: 48px;
+  font-weight: 600;
+}
+
+.contact-footer h4 {
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 60px;
+}
+
+.contact-footer p, .contact-footer ul {
+  color: #fff;
+  margin: 5%;
+  font-size: 20px;
+  line-height: 30px;
+}
+
+.contact-footer button {
+  display: block;
+  border-style: none;
+  width: 90%;
+  margin: 5%;
 }
 
 .form input, .form textarea {
