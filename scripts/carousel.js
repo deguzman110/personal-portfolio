@@ -1,35 +1,62 @@
-var slideIndex = 1;
-showSlides(slideIndex);
+//Starts with middle slides
+// Next = counter +1
+// Prev = counter -1
 
-// Next/Previous controls
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
+// My Code
+var currentSlideindex = 1;
+var slidesArray = Array.from(document.getElementsByClassName("project-slide"));
 
-// Thumbnail image controls
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
+var nextSlide = document.querySelector(".next");
+var prevSlide = document.querySelector(".prev");
 
-function showSlides(n) {
-  let i;
-  let slides = document.getElementsByClassName("project-slide");
-  let dots = document.getElementsByClassName("dot");
+function changeSlide(event) {
+  slidesArray[currentSlideIndex].classList.remove("active");
 
-  if (n > slides.length) {
-    slideIndex = 1;
-  } else if (n < 1) {
-    slideIndex = slides.length;
+  if(event.target.className.includes("prev")) {
+    currentSlideIndex--;
+    if(currentSlideIndex < 0) {
+      currentSlideIndex = slidesArray.length - 1;
+    }
   }
 
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
+  else if(event.target.className.includes("next")) {
+    currentSlideIndex++;
+    if(currentSlideIndex >= slidesArray.length) {
+      currentSlideIndex = 0;
+    }
   }
 
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
-  }
-
-  slides[slideIndex - 1].style.display = "block";
-  slides[slideIndex - 1].className += " active";
+  slidesArray[currentSlideIndex].className += " active";
 }
+
+  nextSlide.addEventListener("click", changeSlide);
+  prevSlide.addEventListener("click", changeSlide);
+
+// Alissa's Code
+//
+// var currentSlideIndex = 1;
+// var slidesArray = Array.from(document.getElementsByClassName('project-slide'));
+//
+// var next = document.querySelector('.next');
+// var prev = document.querySelector('.prev');
+//
+// function changeSlide(event){
+//   console.log(event.target.className)
+//
+//   slidesArray[currentSlideIndex].classList.remove('active');
+//
+//   if(event.target.className.includes('prev')){
+//     currentSlideIndex--;
+//     if(currentSlideIndex < 0){ currentSlideIndex = slidesArray.length - 1; }
+//   }
+//
+//   else if(event.target.className.includes('next')){
+//     currentSlideIndex++;
+//      if(currentSlideIndex >= slidesArray.length){ currentSlideIndex = 0; }
+//   }
+//   slidesArray[currentSlideIndex].className += ' active';
+//   console.log(currentSlideIndex)
+// }
+//
+// next.addEventListener('click', changeSlide);
+// prev.addEventListener('click', changeSlide);

@@ -5,9 +5,9 @@ header {
 header h1 {
   margin-left: 3%;
   margin-top: 2%;
-  font-size: 48px;
+  font-size: 3rem;
   font-weight: 600;
-  line-height: 60px;
+  line-height: 4rem;
   color: #fff;
   text-align: left
 }
@@ -15,9 +15,9 @@ header h1 {
 header h2 {
   margin-left: 3%;
   margin-top: 5%;
-  font-size: 36px;
+  font-size: 2.25rem;
   font-weight: 400;
-  line-height: 40px;
+  line-height: 2.5rem;
   color: #fff;
   text-align: left
 }
@@ -41,7 +41,7 @@ p {
 
 .outside-design ul {
   margin: 3%;
-  line-height: 30px;
+  line-height: 1.875rem;
 }
 
 /* about page styles */
@@ -79,7 +79,7 @@ footer {
 #submit {
   border-style: none;
   background-color: #DE9B43;
-  height: 40px;
+  height: 2.5rem;
   color: #fff;
 }
 

@@ -269,19 +269,29 @@ header button {
   font-weight: 700;
 }
 
+/* projects carousel */
+
 .projects-carousel {
   background: linear-gradient(#43A6DE, #1D6891);
   text-align: center;
+  height: 300px;
 }
 
 .project-slides-container {
-  max-width: 90%;
+  width: 90%;
   position: relative;
-  margin: auto;
+  margin: 0 5%;
 }
 
 .project-slide {
-  display: none;
+  transition: all 0.5s ease-in-out;
+  width: 30%;
+  float: left;
+  margin: 0 2%;
+}
+
+.project-slide img {
+  width: 250px;
 }
 
 .prev, .next {
@@ -318,25 +328,14 @@ header button {
   font-family: "Signika", sans-serif;
   font-size: 20px;
   font-weight: 400;
-  padding: 0;
-  position: absolute;
-  bottom: 100px;
-  width: 100%;
+  position: relative;
+  bottom: 70px;
+  max-width: 60%;
+  margin: auto;
 }
 
-.dot {
-  cursor: pointer;
-  height: 15px;
-  width: 15px;
-  margin: 10px;
-  background-color: #fff;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
-}
-
-.active, .dot:hover {
-  background-color: #333;
+.active {
+  transform: scale(1.5);
 }
 
 .fade {
