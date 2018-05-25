@@ -2,70 +2,23 @@
   box-sizing: border-box;
 }
 
+
+/*** rem scale ***/
 html {
   font-size: 16px;
 }
 
+/*** scale for sections/divs that don't go to width of page ***/
 .container {
   background-color: #fff;
   margin: 0 auto;
   width: 90%;
 }
 
-/* navigation */
-nav {
-  font-family: "Signika", sans-serif;
-  font-weight: 300;
-  color: #fff;
-  font-size: 1rem;
-  height: 4.5rem;
-  padding: 1.25rem;
-}
-
-nav img {
-  float: left;
-}
-
-.nav-menu a {
-  color: #fff;
-  float: right;
-  display: inline;
-}
-
-nav .icon {
-  display: none;
-}
-
-@media screen and (max-width: 600px) {
-  nav ul {display: none;}
-  nav a.icon {
-    float: right;
-    position: relative;
-    display: inline;
-    color: #fff;
-    padding: 1.25rem;
-  }
-}
-
-@media screen and (max-width: 600px) {
-  nav.responsive {position: relative;}
-  nav.responsive a.icon {
-    position: absolute;
-    right: 0;
-    top: 0;
-  }
-  nav.responsive a {
-    float: none;
-    display: block;
-    text-align: left;
-  }
-}
-
-/* links and buttons */
-
+/*** links and button styling ***/
 a {
-  text-decoration: none;
   padding: 0 2rem;
+  text-decoration: none;
 }
 
 a:hover {
@@ -86,16 +39,32 @@ button a:active {
   text-align: center;
 }
 
-/* Typography */
+button, .form button {
+  background-color: #DE9B43;
+  border-style: none;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+  display: inline-block;
+  font-family: "Signika", sans-serif;
+  font-size: 1.25rem;
+  height: 2rem;
+  max-width: 400px;
+  width: 90%;
+}
+
+#submit {
+  cursor: pointer;
+}
+
+/*** Typography ***/
 
 h1, h2, h3, h4, h5 {
-  font-family: "Signika", sans-serif;
   color: #000;
+  font-family: "Signika", sans-serif;
 }
 
 h1, h2 {
-  font-weight: 600;
   color: #fff;
+  font-weight: 600;
 }
 
 h3, h4, h5 {
@@ -135,8 +104,8 @@ h5 {
 }
 
 p, ul {
-  font-family: "Open Sans", sans-serif;
   color: #000;
+  font-family: "Open Sans", sans-serif;
   font-size: 1rem;
   line-height: 1.5rem;
 }
@@ -148,26 +117,93 @@ i {
 /*** structure ***/
 
 header {
+  display: inline-block;
   height: 500px;
   width: 100%;
-  display: inline-block;
 }
 
-button, .form button {
-  background-color: #DE9B43;
-  border-style: none;
-  width: 90%;
-  max-width: 400px;
-  height: 2rem;
-  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+/* navigation - logo */
+nav img {
+  float: left;
+}
+
+/* navigation - menu */
+nav {
+  color: #fff;
   font-family: "Signika", sans-serif;
-  font-size: 1.25rem;
+  font-size: 1rem;
+  font-weight: 300;
+  height: 4.5rem;
+  padding: 1.25rem;
+}
+.nav-menu a {
+  color: #fff;
+  display: inline;
+  float: right;
 }
 
-/* landing page styling */
+nav .icon {
+  display: none;
+}
 
+/* mobile nav */
+@media screen and (max-width: 600px) {
+  nav ul {display: none; }
+  nav ul.opened {
+    display: block;
+    position: absolute; top: 60px; right: 0; height: 100px; background: purple;
+  }
+
+  .nav-menu a { float: none; display: block; background: red; padding: 10px;}
+  nav ul li {width: 200px; padding: 10px 20px; height: 20px; background: red; }
+  nav a.icon {
+    float: right;
+    position: relative;
+    display: inline;
+    color: #fff;
+    padding: 1.25rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  nav.responsive {position: relative; }
+  nav.responsive, a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  nav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+
+/* footer */
+footer {
+  background: linear-gradient(#43A6DE, #1D6891);
+  height: 3.25rem;
+}
+
+.copyright {
+  color: #fff;
+  display: inline;
+  float: left;
+  font-family: "Open Sans", sans-serif;
+  font-size: 0.75rem;
+  font-weight: 300;
+  margin: 1rem;
+  padding-top: 0.5rem;
+}
+
+.footer-icons {
+  display: inline;
+  float: right;
+  padding-top: 1rem;
+}
+
+/*** landing page styling ***/
 /* header animation */
-
 @-webkit-keyframes "fade" {
  0% { opacity: 0; transform: translateY(-1rem); }
  25% { opacity: 0; transform: translateY(-0.5rem); }
@@ -177,10 +213,10 @@ button, .form button {
 }
 
 .changing-word span {
+  -webkit-animation: "fade" 12s infinite;
  color: #DE9B43;
  display: inline;
  position: absolute;
- -webkit-animation: "fade" 12s infinite;
  opacity: 0;
 }
 
@@ -197,99 +233,111 @@ button, .form button {
 }
 
 #post-change {
- text-indent: 18%;
- display: inline;
- position: absolute;
+  display: inline;
+  position: absolute;
+  text-indent: 18%;
+}
+
+/* projects */
+.projects {
+  display: block;
+}
+
+.projects > div {
+  padding-bottom: 2rem;
+}
+
+.projects > div img {
+  border: none;
+  display: block;
+  margin: 0 auto;
+  padding-top: 2rem;
+}
+
+.projects > div h4 {
+  color: #fff;
+  font-weight: 400;
+  margin: 0.5rem;
+  padding: 2rem;
+  text-align: center;
+}
+
+.projects > div button {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
 }
 
 /* my process */
-
 .my-process {
   margin: 2rem 3rem;
 }
 
 .my-process h3, .my-process h5 {
+  display: block;
+  margin: 2rem auto;
   text-align: center;
-  margin: 2rem;
 }
 
 .my-process img {
   border: none;
   display: block;
-  margin: 0 auto;
+  margin: 1rem auto;
 }
 
 .my-process p {
-  margin-top: 2rem;
-  margin-bottom: 3rem;
+  display: block;
+  margin: 1rem auto;
+  max-width: 400px;
+  text-align: center;
 }
 
-/* projects */
+@media screen and (min-width: 1000px) {
+  .process > div {
+    display: inline-block;
+    width: 33%;
+  }
 
-.projects {
- display: block;
-}
-
-.projects > div {
- padding-bottom: 2rem;
-}
-
-.projects > div img {
- border: none;
- display: block;
- margin: 0 auto;
- padding-top: 2rem;
-}
-
-.projects > div h4 {
- color: #fff;
- margin: 0.5rem;
- text-align: center;
- font-weight: 400;
- padding: 2rem;
-}
-
-.projects > div button {
- display: block;
- border-style: none;
- width: 50%;
- margin: auto;
+  .second-row {
+    margin-left: 11%;
+  }
 }
 
 /* contact info */
-
 .contact-footer {
+  display: inline-block;
   height: 400px;
   width: 100%;
-  display: inline-block;
 }
 
 .contact-footer h3, .contact-footer h4 {
   color: #fff;
+  margin: 3rem auto;
   text-align: center;
-  margin: 3rem;
-  font-size: 3rem;
-  font-weight: 600;
+}
+
+.contact-footer h3 {
+  font-size: 2rem;
+  font-weight: 700;
 }
 
 .contact-footer h4 {
   font-size: 2.25rem;
   font-weight: 400;
-  line-height: 4rem;
+  line-height: 2.5rem;
+  max-width: 750px;
 }
 
 .contact-footer p, .contact-footer ul {
   color: #fff;
-  margin: 5%;
   font-size: 1.25rem;
   line-height: 1.75rem;
+  margin: 5%;
 }
 
 .contact-footer button {
   display: block;
-  border-style: none;
-  width: 90%;
-  margin: 5%;
+  margin: 2rem auto;
 }
 
 .form input, .form textarea {
@@ -301,23 +349,23 @@ button, .form button {
 }
 
 footer {
-  height: 3.25rem;
   background: linear-gradient(#43A6DE, #1D6891);
+  height: 3.25rem;
 }
 
 .copyright {
-  float: left;
-  display: inline;
-  margin: 1rem;
-  padding-top: 0.5rem;
-  font-family: "Open Sans", sans-serif;
   color: #fff;
+  display: inline;
+  float: left;
+  font-family: "Open Sans", sans-serif;
   font-size: 0.75rem;
   font-weight: 300;
+  margin: 1rem;
+  padding-top: 0.5rem;
 }
 
 .footer-icons {
-  float: right;
   display: inline;
+  float: right;
   padding-top: 1rem;
 }

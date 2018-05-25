@@ -8,3 +8,11 @@ function myFunction() {
     x.className = "nav";
   }
 }
+
+var hamburgerMenu = document.querySelector('.hamburger');
+var navDropdown = document.querySelector('.nav-menu');
+
+hamburgerMenu.addEventListener('click', function(){
+  console.log(navDropdown);
+  navDropdown.classList.toggle('opened');
+});
