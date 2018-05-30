@@ -8,6 +8,13 @@ html {
   font-size: 16px;
 }
 
+/*** mobile rem scale ***/
+@media screen and (max-width: 600px) {
+  html {
+    font-size: 12px;
+  }
+}
+
 /*** scale for sections/divs that don't go to width of page ***/
 .container {
   background-color: #fff;
@@ -42,7 +49,7 @@ button a:active {
 button, .form button {
   background-color: #DE9B43;
   border-style: none;
-  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+  box-shadow: 0 0.25rem 0.25rem 0 rgba(0, 0, 0, 0.25);
   display: inline-block;
   font-family: "Signika", sans-serif;
   font-size: 1.25rem;
@@ -125,6 +132,14 @@ header {
 /* navigation - logo */
 nav img {
   float: left;
+  margin-left: 2%;
+}
+
+@media screen and (max-width: 600px) {
+  nav img {
+    height: 40px;
+    width: 40px;
+  }
 }
 
 /* navigation - menu */
@@ -134,6 +149,7 @@ nav {
   font-size: 1rem;
   font-weight: 300;
   height: 4.5rem;
+  margin: 0 auto;
   padding: 1.25rem;
 }
 .nav-menu a {
@@ -148,14 +164,33 @@ nav .icon {
 
 /* mobile nav */
 @media screen and (max-width: 600px) {
-  nav ul {display: none; }
-  nav ul.opened {
-    display: block;
-    position: absolute; top: 60px; right: 0; height: 100px; background: purple;
+  nav ul {
+    display: none;
   }
 
-  .nav-menu a { float: none; display: block; background: red; padding: 10px;}
-  nav ul li {width: 200px; padding: 10px 20px; height: 20px; background: red; }
+  nav ul.opened {
+    display: block;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    height: 100px;
+    background: purple;
+  }
+
+  .nav-menu a {
+    float: none;
+    display: block;
+    background: red;
+    padding: 10px;
+  }
+
+  nav ul li {
+    width: 200px;
+    padding: 10px 20px;
+    height: 20px;
+    background: red;
+  }
+
   nav a.icon {
     float: right;
     position: relative;
@@ -230,12 +265,6 @@ footer {
 
 .changing-word span:nth-child(4) {
  -webkit-animation-delay: 9s;
-}
-
-#post-change {
-  display: inline;
-  position: absolute;
-  text-indent: 18%;
 }
 
 /* projects */
@@ -353,6 +382,10 @@ footer {
   height: 3.25rem;
 }
 
+.footer-container {
+  margin: 0 auto;
+}
+
 .copyright {
   color: #fff;
   display: inline;
@@ -361,11 +394,29 @@ footer {
   font-size: 0.75rem;
   font-weight: 300;
   margin: 1rem;
+  margin-left: 4%;
   padding-top: 0.5rem;
 }
 
 .footer-icons {
   display: inline;
   float: right;
+  margin-right: 1%;
   padding-top: 1rem;
+}
+
+@media screen and (max-width: 500px) {
+  .footer-icons a {
+    padding: 1rem;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .footer-icons {
+    display: none;
+  }
+
+  .contact-footer h4 {
+    margin: 0 auto;
+  }
 }

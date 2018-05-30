@@ -2,22 +2,83 @@
 
 header {
   background: linear-gradient(#347075, #000000);
+  height: 600px;
 }
 
 h1 {
-  margin: 3rem 0 2rem 0;
+  margin: 3rem auto;
   text-align: center;
 }
 
 header h3 {
   color: #fff;
-  margin: auto;
-  max-width: 80%;
-  text-align: center;
+  display: block;
+  float: left;
+  margin: 0 auto;
+  margin-left: 4%;
+  margin-bottom: 2%;
+  max-width: 45%;
+  text-align: left;
+}
+
+.project-image {
+  display: block;
+  float: right;
+  margin-right: 2%;
+  position: relative;
 }
 
 header button {
-  margin: 5rem;
+  display: block;
+  margin: 0 auto;
+  position: relative;
+}
+
+@media screen and (max-width: 1440px) {
+  header {
+    height: 100%;
+  }
+
+  header h3 {
+    float: none;
+    max-width: 90%;
+    text-align: center;
+  }
+
+  header button {
+    margin-bottom: 2rem;
+  }
+
+  .project-image {
+    display: block;
+    float: none;
+    margin: 0 auto;
+    max-width: 50%;
+    text-align: center;
+  }
+
+  .project-image img {
+    padding: 2%;
+    max-width: 100%;
+    max-height: 100%;
+  }
+}
+
+@media screen and (max-width: 699px) {
+  header h3 {
+    float: none;
+    max-width: 90%;
+    text-align: center;
+  }
+
+  .project-image {
+    display: none;
+  }
+
+  header button {
+    margin-top: 2rem;
+    max-width: 90%;
+  }
 }
 
 /* overview */
@@ -83,45 +144,60 @@ header button {
 
 */
 
-.sliding-overview > div {
-  max-width: 100%;
-  min-height: 900px;
+.roles, .deliverables, .tools {
   background-color: #f0f0f0;
+  display: inline-block;
+  margin: 2rem;
+  position: relative;;
   text-align: center;
-  margin: 30px 0;
+  width: 400px;
+  height: 450px;
 }
 
-.sliding-overview > div h3 {
-  padding: 40px 0;
+.roles h3, .deliverables h3, .tools h3 {
+  padding: 2rem 0;
 }
 
-.sliding-overview > div li {
+.roles li, .deliverables li, .tools li {
   line-height: 3em;
 }
 
 .problem, .solution {
-  max-width: 100%;
-  margin-bottom: 30px;
   background-color: #f0f0f0;
+  display: inline-block;
+  margin: 2rem;
+  max-width: 45%;
+  position: relative;
 }
 
 .problem h5, .solution h5 {
-  font-size: 0.75em;
-  margin-left: 3%;
-  padding: 3% 0;
-  text-align: left;
   color: #999999;
+  font-size: 0.75em;
+  margin-left: 2rem;
+  padding: 2rem 0;
+  text-align: left;
 }
 
 .problem p, .solution p {
-  line-height: 100px;
+  line-height: 3rem;
+  padding: 2rem;
   text-align: left;
-  padding: 3%;
 }
 
 .problem h3, .solution h3 {
-  margin-left: 3%;
+  margin-left: 2rem;
   text-align: left;
+}
+
+@media screen and (max-width: 600px) {
+  .roles, .deliverables, .tools, .problem, .solution {
+    margin: 0.5rem auto;
+    width: 100%;
+  }
+
+  .problem, .solution {
+    max-width: 100%;
+  }
 }
 
 /* process */
@@ -129,6 +205,7 @@ header button {
 .process > div, .information-architecture > div, .visual-design-branding > div, .clickable-prototype-testing, .conclusion, .projects-carousel {
   padding-left: 3%;
   padding: 30px;
+  width: 100%;
 }
 
 .process h3, .information-architecture > h3, .visual-design-branding > div h3, .conclusion, .projects-carousel h3 {
@@ -156,15 +233,14 @@ header button {
   line-height: 2em;
   list-style-type: disc;
   font-weight: 600;
-  padding-bottom: 3%;
 }
 
 .process > div button, .information-architecture > div button, .visual-design-branding > div button, .prototype-links button {
   border-style: none;
   margin-left: 5%;
   margin-right: 5%;
-  margin-top: 20px;
-  margin-bottom: 20px;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
   width: 90%;
 }
 
@@ -176,6 +252,7 @@ header button {
 
 .competitive-analysis {
     background: linear-gradient(rgba(52, 112, 117, 1),rgba(52, 112, 117, 0.75));
+    margin: 0 auto;
 }
 
 .competitor-logos {
@@ -185,7 +262,12 @@ header button {
 .competitor-logos img {
   display: inline-block;
   margin: 5%;
+  max-width: 100%;
+  max-height: 100%;
   padding: 0 5%;
+}
+
+.competitive-analysis button {
 }
 
 /* user research */
@@ -216,7 +298,6 @@ header button {
   display: inline-block;
   margin-left: 5%;
   margin-right: 5%;
-  width: 90%;
 }
 
 /* visual design & branding */
@@ -230,7 +311,6 @@ header button {
  display: inline-block;
  margin-left: 5%;
  margin-right: 5%;
- width: 90%;
 }
 
 /* briefcase branding images/logo hidden in mobile version */

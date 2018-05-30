@@ -9,6 +9,9 @@
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans|Signika:300,400,600,700" rel="stylesheet">
 
+    <!-- hamburgerMenu Icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
     <!-- Stylesheets -->
     <link rel="stylesheet" href="styles/reset.css">
     <link rel="stylesheet" href="styles/style.css">
@@ -17,18 +20,19 @@
   </head>
 
   <body>
-    <div class="container">
-      <header>
-        <nav>
-            <a href="index.html">
-              <img src="images/logo.png" alt"Anthony DeGuzman">
-            </a>
-            <ul class="nav-menu">
-              <li><a href="contact.html">Contact</a></li>
-              <li><a href="assets/A.DeGuzman Resume.pdf">Resume</a></li>
-              <li><a href="about.html">About</a></li>
-            </ul>
-        </nav>
+    <header>
+      <nav>
+          <a href="index.html">
+            <img src="images/logo.png" alt"Anthony DeGuzman">
+          </a>
+          <ul class="nav-menu">
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="assets/A.DeGuzman Resume.pdf">Resume</a></li>
+            <li><a href="about.html">About</a></li>
+          </ul>
+          <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+              <i class="fa fa-bars"></i></a>
+      </nav>
       <h2>About</h2>
       <h1>Anthony DeGuzman</h1>
       <br>
@@ -37,16 +41,22 @@
 
     <main>
       <section class="about-intro">
+        <div id="intro-icons">
         <a href="contact.html"><img src="images/email-black.png"></a>
         <a href="https://www.linkedin.com/in/anthony-deguzman"><img src="images/linkedin-black.png"></a>
         <a href="https://www.twitter.com/adeguzman110"><img src="images/twitter-black.png"></a>
         <a href="https://www.github.com/deguzman110"><img src="images/github-black.png"></a>
+        </div>
 
         <h3><i>"Simplicity is the ultimate sophistication."</i></h3>
-        <br>
         <span id="leo"><h3>- Leonardo da Vinci</h3></span>
+
+        <div class="mobile-intro">
+        <h3>Hi! My name is Anthony, and I like to make things. I'm a problem solver that strives to uncover solutions through creative, thoughtful, efficient, and effective designs.</h3>
+        </div>
       </section>
 
+      <div class="about-container">
       <section class="background">
         <h3>Background</h3>
         <p>Since I was young, music has always been a very big part of my life, starting with learning piano at age six. I was a part of different musical acts, playing local shows and writing songs with other musicians. As someone that was generaly shy and introverted, getting in front of a crowd to perform was daunting at times, but with practice and preparation, it became second nature. This experience translated to the professional world, making it easier for me to talk and present to teammates, clients, and people.</p>
@@ -71,6 +81,7 @@
         <br>
         <p>Through the iterative process of design, I seek to connect clients with wonderfully-created products through continuously understanding what they desire and what they want to accomplish. Using UX Research techniques and understanding the end user, I've been able to solve these problems and create effective, efficient experiences. Whether making a more effective process for user-friendly onboarding or designing a full-functioning app from scratch, I enjoy the opportunity to leave a mark on the world with each project. With a background in teaching, passion in technology, and an open mind to creativity, anything is possible.</p>
       </section>
+      </div>
 
       <section class="tools-and-tech">
         <h3>Tools & Technologies</h3>
@@ -108,6 +119,8 @@
         <a href="https://www.github.com/deguzman110" target="_blank"><img src="images/github-black.png"></a>
       </div>
     </footer>
-  </div>
+
+    <!-- Scripts -->
+    <script src="scripts/responsive.js"></script>
   </body>
 </html>

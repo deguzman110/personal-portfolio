@@ -9,6 +9,9 @@
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans|Signika:400,700" rel="stylesheet">
 
+    <!-- hamburgerMenu Icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
     <!-- Stylesheets -->
     <link rel="stylesheet" href="styles/reset.css">
     <link rel="stylesheet" href="styles/style.css">
@@ -29,21 +32,21 @@
               <li><a href="contact.html">Contact</a></li>
               <li><a href="assets/A.DeGuzman Resume.pdf">Resume</a></li>
               <li><a href="about.html">About</a></li>
+              <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                  <i class="fa fa-bars"></i></a>
             </ul>
         </nav>
       <h1>Briefcase</h1>
       <h3>Briefcase is a cloud-based storage service that utilizes collaboration and presentation tools to increase productivity for the modern-day worker.</h3>
-      <!-- Briefcase Image: Not used in mobile view
+      <!-- Briefcase Image: Not used in mobile view -->
       <div class="project-image">
-        <img src="images/briefcase-hero-image.png" alt"Briefcase Image">
-      </div> -->
+        <img src="images/briefcase-hero-image.png" alt="Briefcase Image">
+      </div>
       <button><a href="https://invis.io/VZIQDH9E297" target="_blank">View Prototype</a></button>
     </header>
 
     <main>
       <section class="overview">
-        <script src="sliding-overview.js"></script>
-        <div class="sliding-overview">
           <div class="roles">
             <h3>Design Roles</h3>
             <p><ul>
@@ -89,7 +92,6 @@
             <span class="dot" onclick="tools"></span>
           </div>
         -->
-      </div>
 
         <div class="problem">
           <h5>Problem</h5>
@@ -220,6 +222,7 @@
       </section>
 
       <section class="conclusion">
+        <div class="container">
         <h3>Conclusion</h3>
         <img src"images/briefcase-alt-logo.png">
         <p>Key Takeaways
@@ -234,6 +237,7 @@
         <p>In the end, relating everything back to the user is extremely important, and I tried to keep my personas in mind with every design decision i made. I wanted to make sure Amy didn't have to play tag through emails with collaborators, plus that ron had a product he can refer to on the go, and that Steve had something he can organize his content with.</p>
         <br>
         <p>In considering the future of <span class="emphasized">Briefcase</span> past the MVP, I would focus on adding the user stories omitted in the initial release, as well as adding click and drag functionality. If users wished as well, I'd see further development of the mobile web app past view-only capability, provided there is a strong enough desire for it.</p>
+        </div>
       </section>
 
 
@@ -273,9 +277,9 @@
         <a href="https://www.github.com/deguzman110" target="_blank"><img src="images/github-black.png"></a>
       </div>
     </footer>
-
-    <!-- Scripts -->
-    <script src="scripts/carousel.js"></script>
   </div>
+  <!-- Scripts -->
+  <script src="scripts/carousel.js"></script>
+  <script src="scripts/responsive.js"></script>
   </body>
 </html>
