@@ -9,7 +9,6 @@ var next = document.querySelector('.next');
 var prev = document.querySelector('.prev');
 
 function changeSlide(event){
-  console.log(event.target.className)
 
   slidesArray[currentSlideIndex].classList.remove('active');
 
