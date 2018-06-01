@@ -15,7 +15,7 @@ html {
   }
 }
 
-/*** scale for sections/divs that don't go to width of page ***/
+/*** scale for sections/divs that don't go to the width of the page ***/
 .container {
   background-color: #fff;
   margin: 0 auto;
@@ -171,24 +171,23 @@ nav .icon {
   nav ul.opened {
     display: block;
     position: absolute;
-    top: 60px;
+    top: 5rem;
     right: 0;
-    height: 100px;
-    background: purple;
+    height: 100%;
+    width: 100%;
+    text-align: center;
   }
 
   .nav-menu a {
     float: none;
     display: block;
-    background: red;
+    background: #333333;
     padding: 10px;
   }
 
   nav ul li {
-    width: 200px;
-    padding: 10px 20px;
-    height: 20px;
-    background: red;
+    width: 100%;
+    height: 3rem;
   }
 
   nav a.icon {
@@ -298,37 +297,66 @@ footer {
 }
 
 /* my process */
-.my-process {
-  margin: 2rem 3rem;
-}
 
 .my-process h3, .my-process h5 {
-  display: block;
   margin: 2rem auto;
   text-align: center;
 }
 
-.my-process img {
-  border: none;
-  display: block;
+.process > div img {
   margin: 1rem auto;
+  display: block;
 }
 
-.my-process p {
-  display: block;
+.process > div p {
   margin: 1rem auto;
   max-width: 400px;
   text-align: center;
 }
 
-@media screen and (min-width: 1000px) {
-  .process > div {
-    display: inline-block;
-    width: 33%;
-  }
+.process {
+  display: grid;
+  grid-auto-rows: minmax(350px, auto);
+  grid-gap: 1rem;
+  grid-template-areas:
+  "listen listen research research user-determination user-determination"
+  "design-feedback design-feedback design-feedback design-code design-code design-code";
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  margin: 1rem;
+}
 
-  .second-row {
-    margin-left: 11%;
+.listen {
+  grid-area: listen;
+}
+
+.research {
+  grid-area: research;
+}
+
+.user-determination {
+  grid-area: user-determination;
+}
+
+.design-feedback {
+  grid-area: design-feedback;
+}
+
+.design-code {
+  grid-area: design-code;
+}
+
+/* places .process into one column for mobile/tablets */
+@media screen and (max-width: 900px) {
+  .process {
+    grid-gap: 1rem;
+    grid-template-areas:
+    "listen"
+    "research"
+    "user-determination"
+    "design-feedback"
+    "design-code";
+    grid-template-columns: 1fr;
+    margin: 0 auto;
   }
 }
 

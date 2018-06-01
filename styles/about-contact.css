@@ -56,27 +56,25 @@ header h3 {
   }
 }
 
-h3 {
-  margin: 3%;
-}
-
-p {
-  margin-left: 3%;
+@media screen and (max-width: 360px) {
+  .contact-footer h4 {
+    margin: 3rem auto;
+  }
 }
 
 .tools-and-tech img {
-  margin: 3%;
+  margin: 2rem;
 }
 
 .outside-design ul {
-  line-height: 1.875rem;
-  margin: 3%;
+  line-height: 3rem;
+  margin: 2rem;
 }
 
 /* about page styles */
 
 .about-intro {
-  margin: 3% 5%;
+  margin: 2rem;
   text-align: center;
 }
 
@@ -90,43 +88,72 @@ p {
   color: rgba(0,0,0,0.40);
 }
 
+.about-container {
+  display: grid;
+  grid-auto-rows: minmax(200px, auto);
+  grid-gap: 1rem;
+  grid-template-areas:
+  "bg tools-and-tech"
+  "xp-and-transition quote-block"
+  "the-process outside-design";
+  grid-template-columns: 6fr 4fr;
+  margin: 2rem;
+}
+
+.about-container h3 {
+  margin-bottom: 1rem
+}
+
+.background {
+  grid-area: bg;
+}
+
+.experience-and-transition {
+  grid-area: xp-and-transition;
+}
+
+.the-process {
+  grid-area: the-process;
+}
+
 .tools-and-tech {
+  grid-area: tools-and-tech;
   text-align: center;
 }
 
 .outside-design {
+  grid-area: outside-design;
   text-align: center;
 }
 
-@media screen and (max-width: 999px) {
-  .about-container {
-  margin: 0 auto;
-  width: 90%;
-  }
+.quote-block {
+  grid-area: quote-block;
+  text-align: right;
+  margin: 2.5rem;
 }
 
-@media screen and (min-width: 1000px) {
+.quote-block h4 {
+  font-size: 1.25rem;
+  color: rgba(0,0,0,0.75);
+}
+
+/* places .about-container into one column for mobile/tablets */
+@media screen and (max-width: 800px) {
   .about-container {
-    float: left;
-    margin-left: 2%;
-    margin-bottom: 5%;
-    width: 60%;
+    grid-gap: 2rem;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+    "bg"
+    "xp-and-transition"
+    "quote-block"
+    "the-process"
+    "tools-and-tech"
+    "outside-design";
+    margin: 0 3rem;
   }
 
-  .tools-and-tech {
-    display: block;
-    float: right;
-    margin-top: 1.5%;
+  .quote-block h4 {
     text-align: center;
-    width: 30%;
-  }
-
-  .outside-design {
-    display: block;
-    float: right;
-    margin-top: 3%;
-    text-align: left;
-    width: 30%;
   }
 }
 
@@ -143,6 +170,10 @@ footer {
 }
 
 /* contact page styles */
+
+.contact-information {
+  margin: 2rem auto;
+}
 
 #submit {
   border-style: none;

@@ -13,5 +13,5 @@ var hamburgerMenu = document.querySelector('.hamburger');
 var navDropdown = document.querySelector('.nav-menu');
 
 hamburgerMenu.addEventListener('click', function(){
-  navDropdown.classList.toggle('.opened');
+  navDropdown.classList.toggle('opened');
 })

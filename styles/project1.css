@@ -83,93 +83,115 @@ header button {
 
 /* overview */
 
-.roles, .deliverables, .tools {
+.overview {
+  background: #fff;
+  display: grid;
+  grid-auto-rows: minmax(425px, auto);
+  grid-gap: 1rem;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-areas:
+  "roles roles deliverables deliverables tools tools"
+  "problem problem problem solution solution solution";
+  margin: 1rem;
+}
+
+.roles {
+  grid-area: roles;
+}
+
+.deliverables {
+  grid-area: deliverables;
+}
+
+.tools {
+  grid-area: tools;
+}
+
+.problem {
+  grid-area: problem;
+}
+
+.solution {
+  grid-area: solution;
+}
+
+.overview > div {
   background-color: #f0f0f0;
-  display: inline-block;
-  margin: 2rem;
-  position: relative;;
+}
+
+.roles, .deliverables, .tools {
   text-align: center;
-  width: 400px;
-  height: 450px;
 }
 
 .roles h3, .deliverables h3, .tools h3 {
-  padding: 2rem 0;
+  margin: 2rem 0;
 }
 
 .roles li, .deliverables li, .tools li {
-  line-height: 3em;
+  line-height: 3rem;
 }
 
-.problem, .solution {
-  background-color: #f0f0f0;
-  display: inline-block;
-  margin: 2rem;
-  max-width: 45%;
-  position: relative;
+.problem h3, .solution h3 {
+  margin: auto 2rem;
 }
 
 .problem h5, .solution h5 {
   color: #999999;
   font-size: 0.75em;
-  margin-left: 2rem;
+  margin: auto 2rem;
   padding: 2rem 0;
-  text-align: left;
 }
 
 .problem p, .solution p {
   line-height: 3rem;
-  padding: 2rem;
-  text-align: left;
+  margin: 1rem 2rem;
 }
 
-.problem h3, .solution h3 {
-  margin-left: 2rem;
-  text-align: left;
-}
-
-@media screen and (max-width: 600px) {
-  .roles, .deliverables, .tools, .problem, .solution {
-    margin: 0.5rem auto;
-    width: 100%;
+/* places .overview into one column for mobile/tablets */
+@media screen and (max-width: 800px) {
+  .overview {
+    grid-gap: 1rem;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+    "roles"
+    "deliverables"
+    "tools"
+    "problem"
+    "solution";
+    margin: 0 auto;
   }
-
-  .problem, .solution {
-    max-width: 100%;
-  }
-}
 
 /* process */
 
 .process > div, .information-architecture > div, .visual-design-branding > div, .clickable-prototype-testing, .conclusion, .projects-carousel {
-  padding-left: 3%;
-  padding: 30px;
+  margin: 0 auto;
+  padding: 2rem;
   width: 100%;
 }
 
 .process h3, .information-architecture > h3, .visual-design-branding > div h3, .conclusion, .projects-carousel h3 {
-  padding-bottom: 5%;
+  padding-bottom: 2rem;
 }
 
 .process > div h4, .information-architecture > div h4, .visual-design-branding > div h4, .clickable-prototype-testing h4 {
-  padding-bottom: 3%;
+  padding-bottom: 1.25rem;
 }
 
 .process > div p, .information-architecture > div p, .visual-design-branding div p, .clickable-prototype-testing p, .conclusion p {
-  line-height: 2em;
+  line-height: 2rem;
 }
 
 .process > div h5, .information-architecture > div h5, .visual-design-branding > div h5 {
-  font-size: 1em;
+  font-size: 1rem;
   font-weight: 600;
   letter-spacing: 0;
-  line-height: 3em;
+  line-height: 3rem;
 }
 
 .process > div li, .information-architecture > div li, .conclusion li {
   margin-left: 10%;
-  margin-top: 1em;
-  line-height: 2em;
+  margin-top: 1rem;
+  line-height: 2rem;
   list-style-type: disc;
   font-weight: 600;
 }
@@ -369,7 +391,7 @@ header button {
   from {opacity: 0.4}
   to {opacity: 1}
 }
-	
+
 footer {
   background: #fff;
 }
