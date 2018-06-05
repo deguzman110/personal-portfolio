@@ -128,13 +128,13 @@ header h3 {
 
 .quote-block {
   grid-area: quote-block;
-  text-align: right;
   margin: 2.5rem;
+  text-align: right;
 }
 
 .quote-block h4 {
-  font-size: 1.25rem;
   color: rgba(0,0,0,0.75);
+  font-size: 1.25rem;
 }
 
 /* places .about-container into one column for mobile/tablets */
@@ -176,8 +176,8 @@ footer {
 }
 
 #submit {
-  border-style: none;
   background-color: #DE9B43;
+  border-style: none;
   color: #fff;
   height: 2.5rem;
 }

@@ -113,13 +113,30 @@
     height: auto;
 
     border: 1px solid transparent;
+
 }
 .slick-arrow.slick-hidden {
     display: none;
 }
 
-button.slick-arrow {
-  width: 100px;
-  color: white;
-  background: rgba(255, 255, 255, 0.5);
+/* button-styling on project pages */
+
+button.slick-next.slick-arrow {
+  background-color: rgba(17,17,17,0.5);
+  color: #fff;
+  position: absolute;
+  right: 0;
+  top: 25%;
+  width: 50px;
+  z-index: 9999;
+}
+
+button.slick-prev.slick-arrow {
+  background-color: rgba(17,17,17,0.5);
+  color: #fff;
+  position: absolute;
+  left: 0;  
+  top: 25%;
+  width: 50px;
+  z-index: 9999;
 }
