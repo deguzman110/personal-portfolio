@@ -47,15 +47,40 @@ h2 {
 }
 
 /* Recent Work */
+.projects {
+  display: grid;
+  grid-auto-rows: minmax(20px, auto);
+  grid-gap: 0;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas:
+  "blocjams briefcase";
+}
 
 #blocjams {
   background: linear-gradient(to right, #5A2F53, #9E588A, #000000);
+  grid-area: blocjams;
 }
 
 #briefcase {
   background: linear-gradient(rgba(52,112,117,1), rgba(52,112,117,0.5));
+  grid-area: briefcase;
 }
 
+#briefcase img {
+  padding-bottom: 19px;
+}
+
+@media screen and (max-width: 900px) {
+  .projects {
+    display: grid;
+    grid-auto-rows: minmax(20px, auto);
+    grid-gap: 0;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+    "blocjams"
+    "briefcase";
+  }
+}
 /* Contact footer */
 
 .contact-footer {
@@ -67,7 +92,7 @@ h2 {
 @media screen and (max-width: 600px) {
   .contact-footer {
     background: #333;
-    height: 300px;
+    height: 100%;
   }
 
   .contact-footer h4 {

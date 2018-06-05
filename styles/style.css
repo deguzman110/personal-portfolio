@@ -319,8 +319,8 @@ footer {
 }
 
 .process > div img {
-  margin: 1rem auto;
   display: block;
+  margin: 1rem auto;
 }
 
 .process > div p {
@@ -378,13 +378,13 @@ footer {
 /* contact info */
 .contact-footer {
   display: inline-block;
-  height: 400px;
+  height: 100%;
   width: 100%;
 }
 
 .contact-footer h3, .contact-footer h4 {
   color: #fff;
-  margin: 3rem auto;
+  margin: 1rem auto;
   text-align: center;
 }
 
@@ -404,20 +404,26 @@ footer {
   color: #fff;
   font-size: 1.25rem;
   line-height: 1.75rem;
-  margin: 5%;
+  margin: auto 3rem;
 }
 
 .contact-footer button {
   display: block;
-  margin: 2rem auto;
+  margin: 1rem auto;
 }
 
 .form input, .form textarea {
+  display: block;
   font-family: "Open Sans", sans-serif;
   font-size: 1rem;
-  display: block;
   margin: 2% auto;
   width: 40%;
+}
+
+@media screen and (max-width: 1040px) {
+  .form input, .form textarea {
+    width: 80%;
+  }
 }
 
 footer {

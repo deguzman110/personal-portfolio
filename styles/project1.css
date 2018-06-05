@@ -104,7 +104,7 @@ li {
   font-weight: 600;
   line-height: 2rem;
   margin: 1rem auto;
-  text-indent: 10%;
+  text-indent: 3%;
 }
 
 h3, h4, h5, li, p {
@@ -124,7 +124,7 @@ h3, h4, h5, li, p {
 .overview {
   background: #fff;
   display: grid;
-  grid-auto-rows: minmax(400px, auto);
+  grid-auto-rows: minmax(225px, auto);
   grid-gap: 1rem;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
   grid-template-areas:
@@ -167,32 +167,55 @@ h3, h4, h5, li, p {
 
 .roles h3, .deliverables h3, .tools h3 {
   margin: 1rem auto;
+  padding-bottom: 0;
 }
 
 .roles li, .deliverables li, .tools li {
   font-weight: 400;
-  line-height: 3rem;
+  line-height: 1.25rem;
   text-indent: 0;
 }
 
 .problem h3, .solution h3 {
-  margin: 1rem;
+  margin: 0 1rem 1rem 1rem;
+  padding-bottom: 0;
 }
 
 .problem h5, .solution h5 {
   color: #999;
   font-size: 1rem;
-  margin: 1rem;
+  margin: 1rem 1rem 0 1rem;
 }
 
 .problem p, .solution p {
-  line-height: 3rem;
+  line-height: 2.5rem;
   margin: 1rem;
 }
 
 /* responsive overview (mobile/tablet devices) */
+@media screen and (max-width: 1040px) {
+  .overview h3 {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+
+  .overview h5 {
+    margin-bottom: 0;
+  }
+
+  .roles li, .deliverables li, .tools li {
+    line-height: 1.25rem;
+  }
+
+  .problem p, .solution p {
+    line-height: 1.5rem;
+  }
+}
+
 @media screen and (max-width: 700px) {
   .overview {
+    grid-auto-rows: minmax(20px, auto);
     grid-template-columns: 1fr;
     grid-template-areas:
     "roles"
@@ -231,10 +254,57 @@ h3, h4, h5, li, p {
   background: linear-gradient(rgba(52, 112, 117, 1),rgba(52, 112, 117, 0.75));
 }
 
-.personas img {
-  display: block;
-  margin: 3rem auto;
+.personas {
+  display: grid;
+  grid-auto-rows: minmax(20px, auto);
+  grid-gap: 1rem;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas:
+  "personas-header personas-image"
+  "personas-body personas-image"
+  "personas-button personas-image";
+  margin: 1rem;
+}
+
+#personas-body ul li {
+  list-style-type: circle;
+  margin: 1.5rem;
+  text-indent: 0;
+}
+
+#personas-header {
+  grid-area: personas-header;
+}
+
+#personas-body {
+  grid-area: personas-body;
+}
+
+#personas-image {
+  grid-area: personas-image;
+  margin: 0 auto;
+  width: 400px;
   max-width: 90%;
+}
+
+#personas-button {
+  grid-area: personas-button;
+}
+
+/* responsiveness for personas section (tablet/mobile devices) */
+@media screen and (max-width: 1040px) {
+  .personas {
+    display: grid;
+    grid-auto-rows: minmax(20px, auto);
+    grid-gap: 1rem;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+    "personas-header"
+    "personas-body"
+    "personas-image"
+    "personas-button";
+    margin: 1rem;
+  }
 }
 
 /*** information architecture section: user stories & flows ***/
@@ -248,28 +318,33 @@ h3, h4, h5, li, p {
 
 .user-flow-images {
   display: grid;
-  grid-auto-rows: minmax(650px, auto);
+  grid-auto-rows: minmax(300px, auto);
   grid-gap: 1rem;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
   grid-template-areas:
-  "onboarding sign-in"
-  "upload upload";
-  margin: 4rem auto;
+  "onboarding upload sign-in";
+  margin: 2.5rem auto;
 }
 
 #onboarding {
   grid-area: onboarding;
   margin: 0 auto;
+  max-width: 75%;
+  width: 400px;
 }
 
 #sign-in {
   grid-area: sign-in;
   margin: 0 auto;
+  max-width: 75%;
+  width: 400px;
 }
 
 #upload {
   grid-area: upload;
   margin: 0 auto;
+  max-width: 75%;
+  width: 400px;
 }
 
 /* responsive user-flows (tablet devices) */
@@ -311,37 +386,45 @@ h3, h4, h5, li, p {
   display: grid;
   grid-auto-rows: minmax(400px, auto);
   grid-gap: 1rem;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-areas:
-  "wf-01 wf-01"
-  "wf-02 wf-03"
-  "wf-04 wf-05";
+  "wf-01 wf-01 wf-01 wf-01"
+  "wf-02 wf-03 wf-04 wf-05";
   margin: 4rem auto;
 }
 
 #wf-01 {
   grid-area: wf-01;
   margin: 0 auto;
+  max-width: 90%;
 }
 
 #wf-02 {
   grid-area: wf-02;
   margin: 0 auto;
+  max-width: 75%;
+  width: 300px;
 }
 
 #wf-03 {
   grid-area: wf-03;
   margin: 0 auto;
+  max-width: 75%;
+  width: 300px;
 }
 
 #wf-04 {
   grid-area: wf-04;
   margin: 0 auto;
+  max-width: 75%;
+  width: 300px;
 }
 
 #wf-05 {
   grid-area: wf-05;
   margin: 0 auto;
+  max-width: 75%;
+  width: 300px;
 }
 
 /* responsive user-flows (mobile/tablet devices) */
@@ -375,33 +458,40 @@ h3, h4, h5, li, p {
 
 .hifi-mockup-images {
   display: grid;
-  grid-auto-rows: minmax(500px, auto);
+  grid-auto-rows: minmax(400px, auto);
   grid-gap: 1rem;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-areas:
-  "hf-01 hf-02"
-  "hf-03 hf-04";
+  "hf-01 hf-02 hf-03 hf-04";
   margin: 4rem auto;
 }
 
 #hf-01 {
   grid-area: hf-01;
   margin: 0 auto;
+  max-width: 75%;
+  width: 300px;
 }
 
 #hf-02 {
   grid-area: hf-02;
   margin: 0 auto;
+  max-width: 75%;
+  width: 300px;
 }
 
 #hf-03 {
   grid-area: hf-03;
   margin: 0 auto;
+  max-width: 75%;
+  width: 300px;
 }
 
 #hf-04 {
   grid-area: hf-04;
   margin: 0 auto;
+  max-width: 75%;
+  width: 300px;
 }
 
 /* responsive user-flows (mobile/tablet devices) */
@@ -416,6 +506,10 @@ h3, h4, h5, li, p {
     "hf-04";
     margin: 4rem auto;
   }
+
+  .hifi-mockup-images img {
+    max-width: 100%;
+  }
 }
 
 @media screen and (max-width: 600px) {
@@ -424,24 +518,63 @@ h3, h4, h5, li, p {
   }
 }
 
-#briefcase-branding img {
-  display: block;
-  margin: 4rem auto 2rem;
+.branding {
+  display: grid;
+  grid-auto-rows: minmax(10px, auto);
+  grid-gap: 1rem;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas:
+  "branding-header briefcase-branding"
+  "branding-body briefcase-branding"
+  "branding-button briefcase-branding";
 }
 
-@media screen and (max-width: 1040px) {
-  #briefcase-branding img {
-    max-width: 90%;
-  }
+#branding-header {
+  grid-area: branding-header;
+  padding: 0;
+}
+
+#branding-body {
+  grid-area: branding-body;
+}
+
+#briefcase-branding {
+  grid-area: briefcase-branding;
+}
+
+#briefcase-branding img {
+  display: block;
+  margin: 0 auto;
+  max-width: 90%;
+  padding-top: 1rem;
+  width: 400px;
+}
+
+#branding-button {
+  grid-area: branding-button;
 }
 
 #briefcase-branding h5 {
   text-align: center;
 }
 
+@media screen and (max-width: 1040px) {
+  .branding {
+    display: grid;
+    grid-auto-rows: minmax(10px, auto);
+    grid-gap: 1rem;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+    "branding-header"
+    "branding-body"
+    "briefcase-branding"
+    "branding-button";
+  }
+}
 /*** clickable prototype testing section ***/
 .clickable-prototype-testing {
   background: linear-gradient(rgba(51, 51, 51, 1),rgba(51, 51, 51, 0.75));
+  padding-bottom: 0;
 }
 
 .prototype {
@@ -469,17 +602,17 @@ h3, h4, h5, li, p {
   display: block;
   grid-area: mobile-image;
   margin: 0 auto;
-  padding: 39px 0;
+  padding: 40px 0;
 }
 
 #desktop-link {
   grid-area: desktop-link;
-  margin: 2rem auto;
+  margin-top: 2rem;
 }
 
 #mobile-link {
   grid-area: mobile-link;
-  margin: 2rem auto;
+  margin-top: 2rem;
 }
 
 @media screen and (max-width: 1040px) {
@@ -507,9 +640,58 @@ h3, h4, h5, li, p {
 }
 
 /*** conclusion section ***/
+.conclusion .container {
+  display: grid;
+  grid-auto-rows: minmax(20px, auto);
+  grid-gap: 1rem;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas:
+  "conclusion-header ."
+  "logo conclusion-body"
+  "key-takeaways conclusion-body";
+}
+
+.conclusion > div ul li {
+  list-style-type: square;
+  margin: 1.5rem;
+  text-indent: 0;
+}
+
+#alt-logo {
+  grid-area: logo;
+}
+
+#key-takeaways {
+  grid-area: key-takeaways;
+  margin: 0 3rem;
+}
+
+#conclusion-header {
+  grid-area: conclusion-header;
+  padding: 0;
+}
+
+#conclusion-body {
+  grid-area: conclusion-body;
+}
+
 .conclusion > div img {
   display: block;
   margin: 0 auto;
+}
+
+@media screen and (max-width: 800px) {
+.conclusion .container {
+  display: grid;
+  grid-auto-rows: minmax(20px, auto);
+  grid-gap: 1rem;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+  "conclusion-header"
+  "logo"
+  "key-takeaways"
+  "conclusion-body";
+  }
 }
 
 @media screen and (max-width: 600px) {
@@ -545,16 +727,10 @@ h3, h4, h5, li, p {
   }
 }
 
-/* carousel-project-images */
-#blocjams-carousel-logo {
-  background: url("../images/blocjams-logo.png") center;
-  background-color: #000;
-}
-
 /* footer */
 footer {
-  position: relative;
   background: #fff;
+  position: relative;
 }
 
 .copyright {
