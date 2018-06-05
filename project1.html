@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="styles/reset.css">
     <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="styles/project1.css">
-    <link rel="stylesheet" type="text/css" href="styles/slick.css"/>
+    <!-- <link rel="stylesheet" type="text/css" href="styles/slick.css"/> -->
 
   </head>
 
@@ -24,24 +24,27 @@
     <div>
       <header>
         <nav>
-            <a href="index.html">
-              <img src="images/logo.png" alt"Anthony DeGuzman">
-            </a>
-            <ul class="nav-menu">
-              <li><a href="contact.html">Contact</a></li>
-              <li><a href="assets/A.DeGuzman Resume.pdf">Resume</a></li>
-              <li><a href="about.html">About</a></li>
-            </ul>
-            <a href="javascript:void(0);" class="icon hamburger" onclick="myFunction()">
-                <i class="fa fa-bars"></i></a>
+          <a href="index.html">
+            <img src="images/logo.png" alt"Anthony DeGuzman">
+          </a>
+          <ul class="nav-menu">
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="assets/A.DeGuzman Resume.pdf">Resume</a></li>
+            <li><a href="about.html">About</a></li>
+          </ul>
+          <a href="javascript:void(0);" class="icon hamburger" onclick="myFunction()">
+            <i class="fa fa-bars"></i></a>
         </nav>
-      <h1>Briefcase</h1>
-      <h3>Briefcase is a cloud-based storage service that utilizes collaboration and presentation tools to increase productivity for the modern-day worker.</h3>
-      <!-- Briefcase Image: Not used in mobile view -->
-      <div class="project-image">
-        <img src="images/briefcase-hero-image.png" alt="Briefcase Image">
-      </div>
-      <button><a href="https://invis.io/VZIQDH9E297" target="_blank">View Prototype</a></button>
+
+        <div class="header-container">
+          <h1>Briefcase</h1>
+          <h3>Briefcase is a cloud-based storage service that utilizes collaboration and presentation tools to increase productivity for the modern-day worker.</h3>
+          <!-- Briefcase Image: Not used in mobile view -->
+          <div class="project-image">
+            <img src="images/briefcase-hero-image.png" alt="Briefcase Image">
+          </div>
+          <button><a href="https://invis.io/VZIQDH9E297" target="_blank">View Prototype</a></button>
+        </div>
     </header>
 
     <main>
@@ -156,12 +159,14 @@
               <li>Uploading files</li>
               <li>Organizing content</li>
             </ul></p>
-          <button><a href="User-Stories-Link-Here" target="_blank">View User Stories</a></button>
+          <button id="user-stories-button"><a href="User-Stories-Link-Here" target="_blank">View User Stories</a></button>
 
           <p>After establishing user stories, I then began to map out potential flows on paper, using the flows from the competitive analysis as a starting point.</p>
-          <br><img src="images/blocbox-onboarding.png">
-          <img src="images/blocbox-sign-in.png">
-          <img src="images/blocbox-uploading.png">
+          <div class="user-flow-images">
+            <img id="onboarding" src="images/blocbox-onboarding.png">
+            <img id="sign-in" src="images/blocbox-sign-in.png">
+            <img id="upload" src="images/blocbox-uploading.png">
+          </div>
           <button><a href="User-Flows-Link-Here" target="_blank">View User Flows</a></button>
         </div>
       </section>
@@ -170,10 +175,21 @@
         <div class="wireframes">
           <h4>Wireframes</h4>
           <p>Wireframes for <span class="emphasized">BlocBox</span> were first sketched on paper to determine ideal sizing for different page elements. The first sketches were rapid iterations to help generate more ideas for icons, logos, and what features I wanted to highlight for the product.</p>
-          <br><img src="images/wireframes.png">
+          <div class="wireframe-images">
+            <img id="wf-01" src="images/wireframe-01.png">
+            <img id="wf-02" src="images/wireframe-02.png">
+            <img id="wf-03" src="images/wireframe-03.png">
+            <img id="wf-04" src="images/wireframe-04.png">
+            <img id="wf-05" src="images/wireframe-05.png">
+          </div>
 
           <p>The wireframes were eventually further expanded and detailed within Balsamiq to give some insight to potential sizing of fonts, spacing of icons, logos, and more. Wireframes are available for review upon request. The first high-fidelity mockups were then created in Sketch with some graphic elements, but no branding established. Final mockups were created in Figma.</p>
-          <br><img src="images/hifi-mockups.png">
+          <div class="hifi-mockup-images">
+            <img id="hf-01" src="images/hifi-01.png">
+            <img id="hf-02" src="images/hifi-02.png">
+            <img id="hf-03" src="images/hifi-03.png">
+            <img id="hf-04" src="images/hifi-04.png">
+          </div>
         </div>
 
         <div class="branding">
@@ -185,8 +201,7 @@
           <p>After some rapid iterations of logos, I settled on a logo of a briefcase with a cloud in the middle. I settled on Briefcase as the name of the product as I wanted to convey a sense of productivity and convenience with the product, while still being secure. A briefcase in the real world captures these concepts.</p>
           <span id="briefcase-branding">
             <img src="images/branding.png">
-            <img src="images/briefcase-logo.png">
-            Briefcase Primary Logo
+            <img src="images/briefcase-logo.png"><h5>Briefcase Primary Logo</h5>
           </span>
           <button><a href="Style-Guide-Link-Here" target="_blank">View Style Guide</a></button>
         </div>
@@ -195,14 +210,14 @@
       <section class="clickable-prototype-testing">
         <h4>Clickable Prototype & Preference Testing</h4>
         <p>Through numerous versions of different screens, I eventually arrived at a clickable prototype for usability testing. While doing usability testing, I found some small, but subtle things that had to be changed prior to release, but also found edits and additional features that could be added in a future release. I also conducted some preference testing for different elements based on results and feedback. All preference testing was completed using UsabilityHub.</p>
-        <div class="prototype-links">
+        <div class="prototype">
           <span id="desktop-prototype">
-            <img src="images/macbook-mockup.png">
-            <button><a href="https://invis.io/VZIQDH9E297" target="_blank">View Desktop Prototype</a></button>
+            <img id="desktop-image" src="images/macbook-mockup.png">
+            <button id="desktop-link"><a href="https://invis.io/VZIQDH9E297" target="_blank">View Desktop Prototype</a></button>
           </span>
           <span id="mobile-prototype">
-            <img src="images/iphone-mockup.png">
-            <button><a href="https://invis.io/RVIQEIZ8C95" target="_blank">View Mobile Prototype</a></button>
+            <img id="mobile-image" src="images/iphone-mockup.png">
+            <button id="mobile-link"><a href="https://invis.io/RVIQEIZ8C95" target="_blank">View Mobile Prototype</a></button>
           </span>
         </div>
       </section>
@@ -210,7 +225,7 @@
       <section class="conclusion">
         <div class="container">
         <h3>Conclusion</h3>
-        <img src"images/briefcase-alt-logo.png">
+        <img src="images/briefcase-alt-logo.png">
         <p>Key Takeaways
           <ul>
             <li>Prioritize User Stories & Flows</li>
