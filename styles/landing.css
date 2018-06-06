@@ -1,7 +1,7 @@
 /* hero image & header */
 
 header {
-  background: url(../images/landing-page-hero-image.png) center / cover;
+  background: url(../assets/landing/landing-page-hero-image.png) center / cover;
   background-repeat: no-repeat;
 }
 
@@ -85,13 +85,14 @@ h2 {
     grid-template-columns: 1fr;
     grid-template-areas:
     "blocjams"
-    "briefcase";
+    "briefcase"
+    "twitch";
   }
 }
 /* Contact footer */
 
 .contact-footer {
-  background: url(../images/footer-image.png);
+  background: url(../assets/landing/footer-image.png);
   background-repeat: no-repeat;
   background-size: cover;
 }

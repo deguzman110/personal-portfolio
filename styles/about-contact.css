@@ -1,5 +1,5 @@
 header {
-  background: url(../images/about-hero-image.png) center / cover;
+  background: url(../assets/about-contact/about-hero-image.png) center / cover;
   background-repeat: no-repeat;
 }
 
@@ -70,6 +70,14 @@ header h3 {
   margin: 2rem;
 }
 
+#tools-full-image {
+  display: inline;
+}
+
+#tools-mobile-image {
+  display: none;
+}
+
 .outside-design ul {
   line-height: 3rem;
   margin: 2rem;
@@ -106,6 +114,7 @@ header h3 {
   grid-gap: 1rem;
   grid-template-areas:
   "bg tools-and-tech"
+  "xp-and-transition tools-and-tech"
   "xp-and-transition quote-block"
   "the-process outside-design";
   grid-template-columns: 6fr 4fr;
@@ -118,6 +127,7 @@ header h3 {
 
 .background {
   grid-area: bg;
+  margin-bottom: 0.5rem;
 }
 
 .experience-and-transition {
@@ -131,6 +141,10 @@ header h3 {
 .tools-and-tech {
   grid-area: tools-and-tech;
   text-align: center;
+}
+
+.tools-and-tech img {
+  margin: 0.5rem auto;
 }
 
 .outside-design {
@@ -162,6 +176,14 @@ header h3 {
     "tools-and-tech"
     "outside-design";
     margin: 0 3rem;
+  }
+
+  #tools-full-image {
+    display: none;
+  }
+
+  #tools-mobile-image {
+    display: inline;
   }
 
   .quote-block h4 {
