@@ -53,7 +53,8 @@ h2 {
   grid-gap: 0;
   grid-template-columns: 1fr 1fr;
   grid-template-areas:
-  "blocjams briefcase";
+  "blocjams briefcase"
+  "twitch twitch";
 }
 
 #blocjams {
@@ -64,6 +65,12 @@ h2 {
 #briefcase {
   background: linear-gradient(rgba(52,112,117,1), rgba(52,112,117,0.5));
   grid-area: briefcase;
+}
+
+#twitch-designs {
+  background: #6441A4;
+  grid-area: twitch;
+  padding-bottom: 10px;
 }
 
 #briefcase img {
