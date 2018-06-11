@@ -4,50 +4,43 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Anthony DeGuzman | UX/UI Designer</title>
-    <!-- Favicon -->
     <link rel="shortcut icon" href="assets/logo.ico" type="image/x-icon">
     <link rel="icon" href="assets/logo.ico" type="image/x-icon">
 
-    <!-- Custom Styles -->
-
-    <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Signika:300,400,600,700" rel="stylesheet">
-
-    <!-- hamburgerMenu Icon -->
+    <!-- Styles -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans|Signika:300,400,600,700">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-    <!-- Stylesheets -->
     <link rel="stylesheet" href="styles/reset.css">
     <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="styles/about-contact.css">
   </head>
 
   <body>
-    <div>
-      <header>
-        <nav>
-            <a href="index.html">
-              <img src="assets/global/logo.png" alt"Anthony DeGuzman">
-            </a>
-            <ul class="nav-menu">
-              <li><a href="contact.html">Contact</a></li>
-              <li><a href="assets/A.DeGuzman Resume.pdf">Resume</a></li>
-              <li><a href="about.html">About</a></li>
-            </ul>
-            <a href="javascript:void(0);" class="icon hamburger" onclick="myFunction()">
-                <i class="fa fa-bars"></i></a>
-        </nav>
+    <header>
+      <nav>
+        <a href="index.html">
+          <img src="assets/global/logo.png" alt"Anthony DeGuzman">
+        </a>
+        <ul class="nav-menu">
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="assets/A.DeGuzman Resume.pdf">Resume</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+        <a href="javascript:void(0);" class="icon hamburger" onclick="myFunction()"><i class="fa fa-bars"></i></a>
+      </nav>
       <h1>Contact</h1>
     </header>
 
     <main>
-      <div class="container">
       <section class="contact-information">
+      <div class="container">
         <h3>Let's Chat!</h3>
         <p>I'm always interested in meeting new people to talk about design, your next big idea, or just to get to know each other! Please feel free to contact me, and I will get back to you as soon as possible, usually within 1-2 business days.</p>
+      </div>
       </section>
 
       <section class="form">
+      <div class="container">
         <form action="https://getsimpleform.com/messages?form_api_token=d659028d1ebb6e0300e319fbe34a96ad" method="post">
           <input type="hidden" name="redirect_to" value="http://anthony-deguzman.design/thank.html">
           <input type="text" name="name" placeholder="Name">
@@ -55,8 +48,8 @@
           <textarea name="message" placeholder="Message" rows="10" cols="50"></textarea>
           <input id="submit" type="submit" value="Submit">
         </form>
-      </section>
       </div>
+      </section>
     </main>
 
     <footer>
@@ -68,17 +61,15 @@
         <a href="https://www.github.com/deguzman110" target="_blank"><img src="assets/global/github-black.png"></a>
       </div>
     </footer>
-  </div>
-  <!-- Scripts -->
-  <script src="scripts/responsive.js"></script>
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-120392106-1"></script>
-<script>
-window.dataLayer = window.dataLayer || [];
-function gtag(){dataLayer.push(arguments);}
-gtag('js', new Date());
 
-gtag('config', 'UA-120392106-1');
-</script>
+    <!-- Scripts -->
+    <script src="scripts/responsive.js"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-120392106-1"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'UA-120392106-1');
+    </script>
   </body>
 </html>
