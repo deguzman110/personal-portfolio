@@ -1,0 +1,145 @@
+/*** unique global project styles ***/
+/* header */
+header {
+  background: linear-gradient(#9E588A, #000000);
+  height: 100%;
+}
+
+/* div sizing */
+.front-end-development > div {
+  margin: 0 auto;
+  padding: 2rem 15%;
+  width: 100%;
+}
+
+/*** user stories ***/
+.user-stories {
+  background: linear-gradient(#9E588A, #333333);
+}
+
+.user-stories {
+  display: grid;
+  grid-auto-rows: minmax(20px, auto);
+  grid-gap: 1rem;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas:
+  "user-stories-header ."
+  "user-stories-body bloc-jams-logo"
+  "us-1 us-3"
+  "us-2 us-3";
+  margin: 1rem;
+}
+
+.user-stories ul li {
+  list-style-type: square;
+  margin-left: 1.5rem;
+  text-indent: 0;
+  max-width: 90%;
+}
+
+.user-stories h4 {
+  line-height: 2rem;
+}
+
+#acceptance-criteria p {
+  font-weight: 700;
+  text-decoration: underline;
+}
+
+#user-stories-header {
+  grid-area: user-stories-header;
+}
+
+#bloc-jams-logo {
+  grid-area: bloc-jams-logo;
+  margin: 0 auto 1rem auto;
+}
+
+#user-story-1, #user-story-2, #user-story-3 {
+  background: #222;
+  padding: 1rem;
+}
+
+#user-stories-body {
+  grid-area: user-stories-body;
+  width: 95%;
+}
+#user-story-1 {
+  grid-area: us-1;
+}
+#user-story-2 {
+  grid-area: us-2;
+}
+#user-story-3 {
+  grid-area: us-3;
+}
+
+/* tablet & mobile user stories */
+@media screen and (max-width: 900px) {
+  .user-stories {
+    display: grid;
+    grid-auto-rows: minmax(20px, auto);
+    grid-gap: 1rem;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+    "user-stories-header"
+    "user-stories-body"
+    "us-1"
+    "us-2"
+    "us-3";
+  }
+
+  #bloc-jams-logo {
+    display: none;
+  }
+}
+
+.front-end-development {
+  background: linear-gradient(rgba(51, 51, 51, 1),rgba(51, 51, 51, 0.75));
+}
+
+/*** conclusion section ***/
+.conclusion {
+  display: grid;
+  grid-auto-rows: minmax(0px, auto);
+  grid-gap: 1rem;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas:
+  "conclusion-header ."
+  "logo conclusion-body"
+  "key-takeaways conclusion-body";
+}
+
+#conclusion-logo {
+  grid-area: logo;
+  margin: auto;
+}
+#key-takeaways {
+  grid-area: key-takeaways;
+}
+#conclusion-header {
+  grid-area: conclusion-header;
+  padding: 0;
+}
+#conclusion-body {
+  grid-area: conclusion-body;
+}
+
+/* tablet conclusion */
+@media screen and (max-width: 900px) {
+.conclusion {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+  "conclusion-header"
+  "logo"
+  "key-takeaways"
+  "conclusion-body";
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .conclusion > div img {
+    max-width: 100%;
+  }
+}

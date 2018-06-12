@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf8">
+    <meta name="viewport" content"width=device-width, initial-scale=1">
+    <title>Anthony DeGuzman | UX/UI Designer</title>
+    <link rel="shortcut icon" href="assets/global/logo.ico" type="image/x-icon">
+    <link rel="icon" href="assets/global/logo.ico" type="image/x-icon">
+
+    <!-- Styles -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Signika:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/projects.css">
+    <link rel="stylesheet" href="styles/bloc-jams.css">
+    <link rel="stylesheet" href="styles/slick.css"/>
+  </head>
+
+  <body>
+    <header>
+      <nav>
+        <a href="index.html">
+          <img src="assets/global/logo.png" alt"Anthony DeGuzman">
+        </a>
+        <ul class="nav-menu">
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="assets/A.DeGuzman Resume.pdf">Resume</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+        <a href="javascript:void(0);" class="icon hamburger" onclick="myFunction()"><i class="fa fa-bars"></i></a>
+      </nav>
+
+      <div class="header-container">
+        <h1>Bloc Jams</h1>
+        <h3>Bloc Jams was created based on user stories and their acceptance criteria. The finished app is a fully functional web-based music player.</h3>
+        <!-- Bloc Jams Image: Not used in mobile view -->
+        <div class="project-image">
+          <img src="images/bloc-jams/bloc-jams-hero-image.png" alt="Bloc Jams Image">
+        </div>
+        <button><a href="http://ad-bloc-jams.netlify.com/" target="_blank">View Website</a></button>
+      </div>
+    </header>
+
+    <main>
+      <section class="overview">
+        <div class="roles">
+          <h3>Design Roles</h3>
+          <ul>
+            <li>UX Design</li>
+            <li>Front-End Web Development</li>
+          </ul>
+        </div>
+
+        <div class="deliverables">
+          <h3>Design Deliverables</h3>
+          <ul>
+            <li>User Stories & Acceptance Criteria (Review)</li>
+            <li>Finished Website</li>
+          </ul>
+        </div>
+
+        <div class="tools">
+          <h3>Tools Used</h3>
+          <ul>
+            <li>HTML & CSS (Review)</li>
+            <li>jQuery</li>
+            <li>Git & Github</li>
+          </ul>
+        </div>
+
+        <div class="problem">
+          <h5>Problem</h5>
+          <h3>Addressing the User's Needs</h3>
+          <p>For this particular project, the client already had an established brand and visual design. However, they were looking to accommodate users and their desire to listen to music through functionality.</p>
+        </div>
+
+        <div class="solution">
+          <h5>Solution</h5>
+          <h3>A Lightweight Web-based Product</h3>
+          <p>To accommodate users, it was important to build a lightweight product. jQuery was used to add functionality to the initial visual design of the product, as it interacts easily with the DOM.</p>
+        </div>
+      </section>
+
+      <section class="project-process">
+        <div class="user-stories">
+          <div id="user-stories-header">
+            <h3>Process</h3>
+            <h4>User Stories</h4>
+          </div>
+          <div id="bloc-jams-logo">
+            <img src="images/bloc-jams/bloc-jams-logo.png">
+          </div>
+          <div id="user-stories-body">
+            <p>In the creation of Bloc Jams, user stories were provided from the client along with acceptance criteria which must be passed in order to address the needs of users.</p>
+          </div>
+
+          <div id="user-story-1">
+            <h4>As a listener, I want to see the basic information about the album so I can decide whether I'm interested in it.</h4>
+            <span id="acceptance-criteria"><p>Acceptance Criteria:</p></span>
+            <ul>
+              <li>I immediately see the album cover image and title, the artist's name, and some general release info</li>
+            </ul>
+          </div>
+
+          <div id="user-story-2">
+            <h4>As a listener, I want to see the album's songs and play/pause songs by clicking on them so that I can change tracks.</h4>
+            <span id="acceptance-criteria"><p>Acceptance Criteria:</p></span>
+            <ul>
+              <li>I see a list of the album's songs</li>
+              <li>When I click a song, it plays</li>
+              <li>When I hover a song, it displays a "play button" in place of the song number</li>
+              <li>The currently playing song displays a "pause button" in place of the song number</li>
+              <li>A paused song displays a "play" button in place of the song number</li>
+            </ul>
+          </div>
+
+          <div id="user-story-3">
+            <h4>As a listener, I want have the set standard music controls so that I have complete control over my listening experience.</h4>
+            <span id="acceptance-criteria"><p>Acceptance Criteria:</p></span>
+            <ul>
+              <li>Regardless of scroll position, I see a "player bar" with control for Play/Pause, Previous Track, Next Track, Seek, and Volume</li>
+              <li>The Play/Pause button shows a "play" button if no song is playing, and a "pause" button if a song is playing</li>
+              <li>The Previous Track and Next Track buttons only respond when a song is playing</li>
+              <li>The Previous Track button plays the previous song on the album, but doesn't respond if there is no previous song</li>
+              <li>The Next Track button plays the next song on the album, but doesn't respond if there is no next song</li>
+              <li>I can click and drag on the time control slider to change the current song position</li>
+              <li>I see a slider that shows the player's current volume</li>
+              <li>I can click and drag the volume slider to adjust the volume</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="front-end-development">
+        <div class="coding-the-website">
+          <h4>Coding the Website</h4>
+          <p>Since our client already had established branding and visual design, I began by analyzing the HTML and CSS provided along with the current website’s assets. After reviewing the design of the website, I began to add functionality based on the user stories by using jQuery.</p>
+          <br>
+          <p>I began by tackling the first user story by creating a script to allow the user to view the album info. After, I looked to tackle the song list functionality. Last but not least, I looked to incorporate functionality to the bottom music player bar, which gave the user total control over their listening experience.</p>
+          <button><a href="github-repo-here" target="_blank">View Github Repository</a></button>
+          <button><a href="http://ad-bloc-jams.netlify.com/" target="_blank">View Website</a></button>
+        </div>
+      </section>
+
+      <section class="conclusion">
+        <h3 id="conclusion-header">Conclusion</h3>
+        <div id="conclusion-logo">
+          <img src="images/bloc-jams/bloc-jams-logo.png">
+        </div>
+        <div id="key-takeaways"><h5>Key Takeaways:</h5>
+          <ul>
+            <li>Reviewing existing code from clients is important to see what is already implemented and what your expectations are for contribution</li>
+            <li>Analyzing user stories and delivering on expectations is important by passing specific acceptance criteria, especially when coding a solution</li>
+            <li>Use of Git/Github is key in the implementation of each user story in the process for version control and rollback capability</li>
+          </ul>
+        </div>
+
+        <div id="conclusion-body">
+          <p><span class="emphasized">Bloc Jams</span> is a project that helped me gain some valuable experience in programming using jQuery. As jQuery is a widely-accepted and popular JavaScript library, learning to utilize it will help make front-end development more efficient on other projects in the future.</p>
+          <br>
+          <p>This project was unique in having established branding, HTML, and CSS structure. Clients may have a well-established brand already in place, or have a website already structured where they are looking either to improve upon their current iteration, or add greater functionality via JavaScript.</p>
+          <br>
+          <p>In the end, my work once again brought us back to the importance of addressing the user’s experience, and making sure the product can function as intended. Through the use of jQuery, we were able to efficiently and effectively tackle their request.</p>
+          <br>
+          <p>In considering the future of <span class="emphasized">Bloc Jams</span>, I would focus on creating a mobile version of the web-based app. When accessing Bloc Jams on a mobile device, certain elements can be hard to access or control, especially the volume slider. With some small tweaks, this web-based app can find its way to mobile devices with ease.</p>
+        </div>
+      </section>
+
+      <section class="projects-carousel">
+        <h3>Want to see more?</h3>
+        <div class="project-slides-container">
+          <div class="project-slide briefcase">
+            <a href="briefcase.html"><img src="images/briefcase/briefcase-carousel.png"></a>
+            <p>A cloud-storage service prototype.</p>
+          </div>
+
+          <div class="project-slide blocjams">
+            <a href="bloc-jams.html" target="_blank"><img src="images/bloc-jams/bloc-jams-carousel.png"></a>
+            <p>A web-based music player.</p>
+          </div>
+
+          <div class="project-slide coming-soon">
+            <img src="images/twitch/twitch-designs-carousel.png">
+            <p>Panels & overlays for Twitch streamers.</p>
+          </div>
+
+          <div class="project-slide coming-soon">
+            <img src="images/coming-soon.png">
+            <p>More coming soon!</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="copyright">©2018 Anthony DeGuzman</div>
+      <div class="footer-icons">
+        <a href="contact.html"><img src="assets/global/email-black.png"></a>
+        <a href="https://www.linkedin.com/in/anthony-deguzman" target="_blank"><img src="assets/global/linkedin-black.png"></a>
+        <a href="https://www.twitter.com/adeguzman110" target="_blank"><img src="assets/global/twitter-black.png"></a>
+        <a href="https://www.github.com/deguzman110" target="_blank"><img src="assets/global/github-black.png"></a>
+      </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="scripts/responsive.js"></script>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="scripts/slick.js"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-120392106-1"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'UA-120392106-1');
+    </script>
+  </body>
+</html>
