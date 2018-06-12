@@ -1,33 +1,42 @@
 /* hero image & header */
-
 header {
   background: url(../assets/landing/landing-page-hero-image.png) center / cover;
   background-repeat: no-repeat;
 }
 
-h1 {
-  margin-top: 3%;
-  margin-bottom: 2%;
-  margin-left: 27%;
+h1, h2 {
+  margin: 2rem auto;
+  max-width: 50%;
 }
 
-h2 {
-  margin-left: 27%;
-  max-width: 60%;
+.changing-word {
+  display: inline;
+  margin-left: 0.05rem;
 }
 
-@media screen and (max-width: 600px) {
+.changing-word span {
+  display: inline-block;
+}
+
+.static-word span {
+  display: none;
+}
+
+/* tablet landing page header */
+@media screen and (max-width: 900px) {
   header {
-  background-position: left;
-  text-align: center;
+    background-position: left;
+    height: 400px;
+    text-align: center;
   }
 
   h1, h2 {
-    margin: 5% auto;
+    font-size: 1.75rem;
+    margin: 0 auto;
     max-width: 90%;
   }
 
-  .changing-word span {
+  .changing-word {
     display: none;
   }
 
@@ -36,17 +45,25 @@ h2 {
   }
 }
 
-@media screen and (min-width: 601px) {
-  .changing-word span {
-    display: inline-block;
+/* mobile landing page header */
+@media screen and (max-width: 600px) {
+  header {
+    background-position: left;
+    height: 250px;
+    text-align: center;
   }
 
-  .static-word span {
-    display: none;
+  nav {
+    margin-bottom: 0;
+  }
+
+  h1, h2 {
+    font-size: 1.5rem;
+    line-height: 2rem;
   }
 }
 
-/* Recent Work */
+/* Recent Work & Process */
 .projects {
   display: grid;
   grid-auto-rows: minmax(20px, auto);
@@ -57,26 +74,25 @@ h2 {
   "twitch twitch";
 }
 
+#briefcase img {
+  padding-bottom: 19px;
+}
+
 #blocjams {
   background: linear-gradient(to right, #5A2F53, #9E588A, #000000);
   grid-area: blocjams;
 }
-
 #briefcase {
   background: linear-gradient(rgba(52,112,117,1), rgba(52,112,117,0.5));
   grid-area: briefcase;
 }
-
 #twitch-designs {
   background: #6441A4;
   grid-area: twitch;
   padding-bottom: 10px;
 }
 
-#briefcase img {
-  padding-bottom: 19px;
-}
-
+/* tablet & mobile projects */
 @media screen and (max-width: 900px) {
   .projects {
     display: grid;
@@ -88,15 +104,20 @@ h2 {
     "briefcase"
     "twitch";
   }
-}
-/* Contact footer */
 
+  .projects img {
+    max-width: 80%;
+  }
+}
+
+/* landing page contact footer image */
 .contact-footer {
   background: url(../assets/landing/footer-image.png);
   background-repeat: no-repeat;
   background-size: cover;
 }
 
+/* mobile landing page footer */
 @media screen and (max-width: 600px) {
   .contact-footer {
     background: #333;
