@@ -35,23 +35,11 @@ a:active, .nav-menu a:active {
   color: #DE9B43;
 }
 
-a.btn {
-  color: #fff;
-}
-
-a.btn:hover {
-  background-color: #43A6DE;
-  cursor: pointer;
-}
-
-a.btn:active {
-  color: #000;
-}
-
-button, .btn, .form button {
+button, .btn, a.btn, .form button, #submit {
   background-color: #DE9B43;
   border-style: none;
   box-shadow: 0 0.25rem 0.25rem 0 rgba(0, 0, 0, 0.25);
+  color: #fff;
   font-family: "Signika", sans-serif;
   font-size: 1.25rem;
   height: 2.5rem;
@@ -59,6 +47,15 @@ button, .btn, .form button {
   padding: 10px;
   width: 90%;
   max-width: 350px;
+}
+
+a.btn:hover, #submit:hover {
+  background-color: #43A6DE;
+  cursor: pointer;
+}
+
+a.btn:active, #submit:active {
+  color: #000;
 }
 
 #submit {
