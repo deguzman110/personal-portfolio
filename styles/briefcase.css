@@ -58,7 +58,7 @@ header {
   grid-template-areas:
   "personas-header ."
   "personas-body personas-image"
-  "personas-button personas-image";
+  "personas-button personas-button";
   margin: 1rem;
 }
 
@@ -112,7 +112,7 @@ header {
 }
 
 #user-stories-button {
-  margin: 2rem auto;
+  margin: 1rem auto;
 }
 
 .user-flow-images {

@@ -71,7 +71,7 @@ h1, h2 {
   grid-template-columns: 1fr 1fr;
   grid-template-areas:
   "blocjams briefcase"
-  "twitch twitch";
+  /* "twitch twitch" */;
 }
 
 #briefcase img {
@@ -102,7 +102,7 @@ h1, h2 {
     grid-template-areas:
     "blocjams"
     "briefcase"
-    "twitch";
+    /* "twitch" */;
   }
 
   .projects img {

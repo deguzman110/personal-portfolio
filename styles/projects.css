@@ -51,11 +51,6 @@ h3, h4, h5, li, p {
   font-weight: 700;
 }
 
-button {
-  display: block;
-  margin: 2rem auto 0;
-}
-
 .project-image {
   text-align: center;
 }
@@ -64,9 +59,9 @@ button {
   max-width: 50%;
 }
 
-header button {
+header .btn {
   display: block;
-  margin: 2rem auto;
+  margin: 1rem auto;
 }
 
 /* tablet header */
@@ -104,10 +99,6 @@ header button {
   header h3 {
     font-size: 1.25rem;
     max-width: 90%;
-  }
-
-  header button {
-    margin: 0 auto;
   }
 }
 
@@ -204,13 +195,13 @@ header button {
 /* projects - general styling */
 .project-process > div, .information-architecture > div, .visual-design-branding > div, .clickable-prototype-testing, .conclusion {
   margin: 0 auto;
-  padding: 2rem 15%;
+  padding: 1rem 15%;
   width: 100%;
 }
 
-button {
+.btn {
   display: block;
-  margin: 2rem auto 0;
+  margin: 1rem auto 0;
 }
 
 /* projects - typography */
@@ -264,7 +255,7 @@ h3, h4, h5, li, p {
 .projects-carousel {
   background: linear-gradient(#43A6DE, #1D6891);
   height: 100%;
-  padding: 2rem;
+  padding: 1rem 0;
   position: relative;
   text-align: center;
   width: 100%;
@@ -276,12 +267,11 @@ h3, h4, h5, li, p {
 }
 
 .project-slides-container img {
-  margin: 2rem auto;
+  margin: 0 auto;
 }
 
 .project-slides-container p {
   font-size: 1rem;
-  line-height: 1.25rem;
 }
 
 /* mobile carousel */
