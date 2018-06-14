@@ -408,8 +408,50 @@ footer {
   width: 40%;
 }
 
-@media screen and (max-width: 1040px) {
+@media screen and (max-width: 900px) {
   .form input, .form textarea {
     width: 80%;
+  }
+}
+
+/*** resume page styling ***/
+/* header */
+#resume-header {
+  background: linear-gradient(#43A6DE, #1D6891);
+  display: inline-block;
+  height: 250px;
+}
+
+#resume-header h1 {
+  margin: 1rem 10%;
+}
+
+#resume-section {
+  background-color: #333;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+#resume-png {
+  display: block;
+  margin: 0 auto;
+  padding: 2rem 0;
+  width: 90%;
+}
+
+#resume-btn {
+  display: block;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 900px) {
+  #resume-header {
+    height: 200px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #resume-header {
+    height: 150px;
   }
 }
