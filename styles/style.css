@@ -212,12 +212,19 @@ footer {
 }
 
 .footer-icons img {
-  padding-left: 3rem;
+  margin-left: 3rem;
+  width: 24px;
 }
 
 @media screen and (max-width: 600px) {
+  .footer-icons {
+    margin: 1.25rem 5% 1rem 0;
+  }
+}
+
+@media screen and (max-width: 450px) {
   .footer-icons img {
-    padding-left: 0.5rem;
+    margin-left: 0.75rem;
   }
 }
 

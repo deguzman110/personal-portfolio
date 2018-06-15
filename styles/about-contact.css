@@ -72,9 +72,9 @@ header h3 {
 }
 
 .about-intro img {
-  padding: 0 1.5rem;
-  max-height: 100%;
-  max-width: 100%;
+  margin: 0 1.5rem;
+  height: 24px;
+  width: 24px;
 }
 
 #quote {
@@ -203,6 +203,19 @@ footer {
 
 .copyright {
   color: #000;
+}
+
+.footer-icons img {
+  fill: black;
+  margin-left: 3rem;
+  width: 24px;
+}
+
+@media screen and (max-width: 600px) {
+  .footer-icons img {
+    margin-left: 1rem;
+    width: 16px;
+  }
 }
 
 /*** contact page styles ***/

@@ -390,12 +390,6 @@ header {
   margin: 0 auto;
 }
 
-.conclusion > div ul li {
-  list-style-type: square;
-  margin: 1.5rem;
-  text-indent: 0;
-}
-
 #alt-logo {
   grid-area: logo;
 }
@@ -408,23 +402,4 @@ header {
 }
 #conclusion-body {
   grid-area: conclusion-body;
-}
-
-/* tablet conclusion */
-@media screen and (max-width: 900px) {
-.conclusion {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-areas:
-  "conclusion-header"
-  "logo"
-  "key-takeaways"
-  "conclusion-body";
-  }
-}
-
-@media screen and (max-width: 600px) {
-  .conclusion > div img {
-    max-width: 100%;
-  }
 }
