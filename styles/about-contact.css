@@ -127,7 +127,8 @@ header h3 {
   grid-auto-rows: minmax(200px, auto);
   grid-gap: 1rem;
   grid-template-areas:
-  "bg tools-and-tech"
+  "bg musician"
+  "xp-and-transition tools-and-tech"
   "xp-and-transition quote-block"
   "the-process outside-design";
   grid-template-columns: 6fr 4fr;
@@ -136,6 +137,11 @@ header h3 {
 
 .background {
   grid-area: bg;
+}
+.musician {
+  grid-area: musician;
+  margin: 0 auto;
+  text-align: center;
 }
 .experience-and-transition {
   grid-area: xp-and-transition;
@@ -147,16 +153,24 @@ header h3 {
   grid-area: tools-and-tech;
   text-align: center;
 }
-
 .outside-design {
   grid-area: outside-design;
   text-align: center;
 }
-
 .quote-block {
   grid-area: quote-block;
   margin: 3rem auto;
   text-align: center;
+}
+
+.musician img {
+  height: 500px;
+  margin-top: 5.5rem;
+}
+
+.musician h5 {
+  letter-spacing: 0;
+  margin-top: 0.5rem;
 }
 
 .quote-block h4 {
@@ -172,7 +186,6 @@ header h3 {
     grid-template-areas:
     "bg"
     "xp-and-transition"
-    "quote-block"
     "the-process"
     "tools-and-tech"
     "outside-design";
@@ -181,6 +194,14 @@ header h3 {
 
   .about-container p {
     max-width: 100%;
+  }
+
+  .background h3 {
+    margin-top: 0;
+  }
+
+  .musician {
+    display: none;
   }
 
   #tools-full-image {
@@ -192,11 +213,11 @@ header h3 {
   }
 
   .quote-block {
-    margin: 0 auto;
+    display: none;
   }
 
-  .quote-block h4 {
-    text-align: center;
+  .outside-design ul {
+    margin-bottom: 0;
   }
 }
 
