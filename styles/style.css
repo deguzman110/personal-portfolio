@@ -85,10 +85,12 @@ h1 {
 h2 {
   font-size: 2.25rem;
   font-weight: 400;
+  line-height: 3rem;
 }
 
 h3 {
   font-size: 1.75rem;
+  line-height: 2.25rem;
 }
 
 h4 {
@@ -107,7 +109,7 @@ p, ul {
   color: #000;
   font-family: "Open Sans", sans-serif;
   font-size: 1.25rem;
-  line-height: 1.5rem;
+  line-height: 1.75rem;
 }
 
 i {
@@ -307,12 +309,13 @@ footer {
 
 /* my process */
 .my-process h3 {
-  margin: 1.75rem auto 1rem;
+  margin: 2rem auto 1rem;
   text-align: center;
 }
 
 .my-process h5 {
-  height: 32px;
+  height: 3rem;
+  line-height: 1.25rem;
   margin: 0 auto;
   text-align: center;
 }
@@ -322,27 +325,17 @@ footer {
 }
 
 .my-process img {
-  display: block;
+  display: grid;
   margin: 1rem auto;
   width: 96px;
 }
 
 .my-process p {
+  line-height: 1.75rem;
   margin: 0 auto;
   max-width: 400px;
   text-align: center;
 }
-
-/* .process {
-  display: grid;
-  grid-auto-rows: minmax(100px, auto);
-  grid-gap: 1rem;
-  grid-template-areas:
-  "listen listen research research user-determination user-determination"
-  "design-feedback design-feedback design-feedback design-code design-code design-code";
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-  margin: 1rem;
-} */
 
 .process {
   display: grid;
@@ -351,7 +344,7 @@ footer {
   grid-template-areas:
   "listen research user-determination design-feedback design-code";
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-  margin: 1rem auto 2rem;
+  margin: 0 auto 2rem;
 }
 
 .listen {
@@ -393,12 +386,13 @@ footer {
 /* contact info */
 .contact-footer {
   display: inline-block;
+  padding: 2rem;
   width: 100%;
 }
 
 .contact-footer h3, .contact-footer h4 {
   color: #fff;
-  margin: 1rem 10%;
+  margin: 0 10%;
   text-align: center;
 }
 
@@ -410,8 +404,8 @@ footer {
 .contact-footer h4 {
   font-size: 1.5rem;
   font-weight: 400;
-  line-height: 1.5rem;
-  margin-top: 2rem;
+  line-height: 2rem;
+  margin: 1rem auto;
   max-width: 80%;
 }
 
@@ -425,7 +419,7 @@ footer {
 
 .contact-footer .btn {
   display: block;
-  margin: 1rem auto 2rem;
+  margin: 0 auto;
 }
 
 /*** contact page styling ***/
