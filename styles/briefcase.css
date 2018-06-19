@@ -92,8 +92,8 @@ header {
     grid-template-columns: 1fr;
     grid-template-areas:
     "personas-header"
-    "personas-body"
     "personas-image"
+    "personas-body"
     "personas-button";
     margin: 1rem;
   }
@@ -402,4 +402,16 @@ header {
 }
 #conclusion-body {
   grid-area: conclusion-body;
+}
+
+/* table & mobile conclusion */
+@media screen and (max-width: 900px) {
+  .conclusion {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+    "conclusion-header"
+    "logo"
+    "key-takeaways"
+    "conclusion-body";
+  }
 }
