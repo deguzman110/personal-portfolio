@@ -56,7 +56,7 @@ nav { height: 4.5rem; margin: 1rem auto; max-width: 90%; }
 nav img { float: left; }
 nav li { font-weight: 600; line-height: 2rem; }
 nav .icon { display: none; }
-.nav-menu a { color: #fff; float: right; font-size: 1rem; margin-left: 2rem; padding-top: 1.25rem; }
+.nav-menu a { color: #fff; float: right; font-size: 1.125rem; margin-left: 2rem; padding-top: 1.25rem; }
 
 /* mobile nav */
 @media screen and (max-width: 600px) {
@@ -82,7 +82,9 @@ footer { background: linear-gradient(#43A6DE, #1D6891); height: 4rem; }
 .footer-icons { float: right; margin: 1.25rem 5% 1rem 1rem; }
 .footer-icons img { margin-left: 3rem; width: 24px; }
 
-.copyright { color: #fff; float: left; font-family: "Open Sans", sans-serif; font-size: 0.75rem; font-weight: 300; margin: 1rem 1rem 1rem 5%; padding-top: 0.6rem; }
+.copyright { color: #fff; float: left; font-family: "Open Sans", sans-serif; font-size: 0.875rem; font-weight: 300; margin: 1rem 1rem 1rem 5%; padding-top: 0.6rem; }
+
+.dark-copyright { color: #000; float: left; font-family: "Open Sans", sans-serif; font-size: 0.875rem; font-weight: 300; margin: 1rem 1rem 1rem 5%; padding-top: 0.6rem; }
 
 @media screen and (max-width: 600px) {
   .footer-icons { margin: 1.25rem 5% 1rem 0; }
