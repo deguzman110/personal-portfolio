@@ -10,7 +10,7 @@
     <!-- Styles -->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans|Signika:400,700" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="styles/reset.css">    
+    <link rel="stylesheet" href="styles/reset.css">
     <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="styles/projects.css">
     <link rel="stylesheet" href="styles/briefcase.css">
@@ -38,7 +38,8 @@
         <div class="project-image">
           <img src="images/briefcase/briefcase-hero-image.png" alt="Briefcase Image">
         </div>
-        <a href="https://invis.io/VZIQDH9E297" class="btn" target="_blank">View Prototype</a>
+        <a id="desktop-header-btn" href="https://projects.invisionapp.com/share/QMLFFESRB6Z#/screens/284261121" class="btn" target="_blank">View Desktop Prototype</a>
+        <a id="mobile-header-btn" href="https://projects.invisionapp.com/share/DULFFRECK73#/screens" class="btn"  target="_blank">View Mobile Prototype</a>
       </div>
     </header>
 
@@ -114,18 +115,20 @@
 
         <div class="user-research">
           <h4>User Research</h4>
-          <p>81% of Respondents utilize cloud storage services for personal and/or business/school use.</p>
-          <br>
-          <h5>Of those respondents:</h5>
+          <div class="pie-chart-container">
+            <canvas id="userResearchChart"></canvas>
+          </div>
+          <p>81% of respondents utilize cloud storage services for personal and/or business/school use while 19% do not, preferring to use USB or external hard drives due to security/privacy concerns.</p>
+          <div class="bar-chart-container">
+            <canvas id="userResearchBreakdown"></canvas>
+          </div>
+          <h5>Of the respondents that do utilize cloud storage services:</h5>
           <ul>
-            <li>83% utilize Google Drive</li>
-            <li>61% use Dropbox and iCloud</li>
+            <li> 83% utilize Google Drive</li>
+            <li>61% use Dropbox and iCloud (tie)</li>
             <li>27.8% use OneDrive</li>
           </ul>
-          <br>
           <p>Convenience and need for space were the two major reasons people utilize cloud storage services.</p>
-          <br>
-          <p> 19% of Respondents do NOT use cloud storage services, and prefer using USB or external hard drives due to security/privacy concerns.</p>
           <a href="https://goo.gl/forms/qb2cnPhFPle2sub43" class="btn" target="_blank">View Survey</a>
         </div>
 
@@ -212,11 +215,11 @@
         <div class="prototype">
           <span id="desktop-prototype">
             <img id="desktop-image" src="images/briefcase/macbook-mockup.png">
-            <a href="https://invis.io/VZIQDH9E297" class="btn" id="desktop-link" target="_blank">View Desktop Prototype</a>
+            <a href="https://projects.invisionapp.com/share/QMLFFESRB6Z#/screens/284261121" class="btn" id="desktop-link" target="_blank">View Desktop Prototype</a>
           </span>
           <span id="mobile-prototype">
             <img id="mobile-image" src="images/briefcase/iphone-mockup.png">
-            <a href="https://invis.io/RVIQEIZ8C95" class="btn" id="mobile-link" target="_blank">View Mobile Prototype</a>
+            <a href="https://projects.invisionapp.com/share/DULFFRECK73#/screens" class="btn" id="mobile-link" target="_blank">View Mobile Prototype</a>
           </span>
         </div>
       </section>
@@ -284,6 +287,8 @@
     <script src="scripts/responsive.js"></script>
     <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
+    <script type="text/javascript" src="scripts/briefcase-chart.js"></script>
     <script type="text/javascript" src="scripts/slick.js"></script>
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-120392106-1"></script>
     <script>
