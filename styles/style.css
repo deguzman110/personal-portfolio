@@ -133,6 +133,8 @@ nav img {
 nav li {
   font-weight: 600;
   line-height: 2rem;
+  margin: 0;
+  text-indent: 0;
 }
 
 nav .icon {
@@ -277,6 +279,10 @@ footer {
   max-width: 50%;
 }
 
+#landing-header h1 {
+  padding-top: 50px;
+}
+
 .changing-word {
   display: inline;
   margin-left: 0.05rem;
@@ -329,6 +335,10 @@ footer {
   #landing-header h1, #landing-header h2 {
     font-size: 1.5rem;
     line-height: 2rem;
+  }
+
+  #landing-header h1 {
+    padding-top: 0;
   }
 }
 

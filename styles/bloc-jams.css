@@ -1,7 +1,8 @@
 /*** unique global project styles ***/
 /* header */
 header {
-  background: linear-gradient(#9E588A, #000000);
+  background: url(../images/bloc-jams/bloc-jams-hero-background.png) center / cover;
+  background-repeat: no-repeat;
   height: 100%;
 }
 

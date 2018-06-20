@@ -1,7 +1,8 @@
 /*** unique global project styles ***/
 /* header */
 header {
-  background: linear-gradient(#347075, #000000);
+  background: url(../images/briefcase/briefcase-hero-background.png) center / cover;
+  background-repeat: no-repeat;
   height: 100%;
 }
 
@@ -443,5 +444,11 @@ header .btn {
     "logo"
     "key-takeaways"
     "conclusion-body";
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .conclusion > div img {
+    max-width: 100%;
   }
 }
