@@ -285,11 +285,11 @@ footer {
 
 .changing-word {
   display: inline;
-  margin-left: 0.05rem;
 }
 
 .changing-word span {
   display: inline-block;
+  margin-left: 5px;
 }
 
 .static-word span {
