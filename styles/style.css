@@ -292,7 +292,7 @@ footer {
   margin-left: 5px;
 }
 
-.static-word span {
+#mobile-intro-text {
   display: none;
 }
 
@@ -311,21 +311,19 @@ footer {
     max-width: 90%;
   }
 
-  .changing-word {
+  #intro-text {
     display: none;
   }
 
-  .static-word span {
-    display: inline-block;
+  #mobile-intro-text {
+    display: inherit;
   }
 }
 
 /* mobile landing page header */
 @media screen and (max-width: 600px) {
   #landing-header {
-    background-position: left;
     height: 250px;
-    text-align: center;
   }
 
   #landing-header nav {
