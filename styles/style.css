@@ -115,7 +115,6 @@ i {
 /*** structure ***/
 header {
   display: inline-block;
-  height: 500px;
   width: 100%;
 }
 
@@ -271,16 +270,18 @@ footer {
 /******************** landing page styling ********************/
 /* hero image & header */
 #landing-header {
-  background: url(../assets/landing/landing-page-hero-image.png) center / cover; background-repeat: no-repeat;
+  background: url(../assets/landing/landing-page-hero-image.png) center / cover;
+  background-repeat: no-repeat;
 }
 
-#landing-header h1, #landing-header h2 {
-  margin: 2rem auto;
-  max-width: 50%;
+#intro-text {
+  margin: 0 auto;
+  padding: 25vh 0;
+  max-width: 42%;
 }
 
-#landing-header h1 {
-  padding-top: 50px;
+#intro-text h1 {
+  padding-bottom: 1rem;
 }
 
 .changing-word {
@@ -299,16 +300,13 @@ footer {
 /* tablet landing page header */
 @media screen and (max-width: 900px) {
   #landing-header {
-    background-position: left;
-    height: 400px;
+    background: linear-gradient(#43A6DE, #1D6891);
     text-align: center;
   }
 
   #landing-header h1, #landing-header h2 {
     font-size: 1.75rem;
     line-height: 2.25rem;
-    margin: 0 auto;
-    max-width: 90%;
   }
 
   #intro-text {
@@ -317,14 +315,18 @@ footer {
 
   #mobile-intro-text {
     display: inherit;
+    margin: 2rem auto;
+    padding: 10vh 0;
+    max-width: 70%;
+  }
+
+  #mobile-intro-text h1 {
+    padding-bottom: 1rem;
   }
 }
 
 /* mobile landing page header */
 @media screen and (max-width: 600px) {
-  #landing-header {
-    height: 250px;
-  }
 
   #landing-header nav {
     margin-bottom: 0;
@@ -335,8 +337,9 @@ footer {
     line-height: 2rem;
   }
 
-  #landing-header h1 {
-    padding-top: 0;
+  #mobile-intro-text {
+    padding: 5vh 0;
+    max-width: 70%;
   }
 }
 
@@ -404,7 +407,7 @@ footer {
   grid-gap: 0;
   grid-template-columns: 1fr 1fr;
   grid-template-areas:
-  "blocjams briefcase"
+  "briefcase blocjams"
   /* "twitch twitch" */;
 }
 
@@ -414,10 +417,12 @@ footer {
 
 #blocjams {
   background: linear-gradient(to right, #5A2F53, #9E588A, #000000); grid-area: blocjams;
+  padding: 20vh 0;
 }
 
 #briefcase {
   background: linear-gradient(rgba(52,112,117,1), rgba(52,112,117,0.5)); grid-area: briefcase;
+  padding: 20vh 0;
 }
 
 /* Hidden until implemented
@@ -435,10 +440,6 @@ footer {
     "briefcase"
     /* "twitch" */;
   }
-
-  .projects img {
-    max-width: 80%;
-  }
 }
 
 .projects > div {
@@ -448,6 +449,7 @@ footer {
 .projects > div img {
   display: block;
   margin: 0 auto;
+  max-width: 80%;
 }
 
 .projects > div h4 {
@@ -465,17 +467,17 @@ footer {
 
 /* my process */
 .my-process {
-  margin: 1rem auto;
+  margin: 10vh auto;
 }
 
 .my-process img {
   display: grid;
-  margin: 1rem auto;
+  margin: 5vh auto;
   width: 96px;
 }
 
 .my-process h3 {
-  margin: 2rem auto 1rem;
+  padding-bottom: 5vh;
   text-align: center;
 }
 
@@ -500,7 +502,7 @@ footer {
   grid-template-areas:
   "listen research user-determination design-feedback design-code";
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-  margin: 0 auto 2rem;
+  margin: 0 auto;
 }
 
 .listen {
@@ -534,8 +536,10 @@ footer {
     "design-feedback"
     "design-code";
     grid-template-columns: 1fr;
-    margin: 1rem auto;
-    padding-bottom: 1rem;
+  }
+
+  .process > div {
+    padding: 5vh;
   }
 
   .my-process h5 {
@@ -543,23 +547,38 @@ footer {
   }
 }
 
+@media screen and (max-width: 600px) {
+  .my-process {
+    margin: 5vh auto;
+  }
+}
+
 /* landing-page footer */
 #landing-contact-footer {
-  background: url(../assets/landing/footer-image.png);
+  background: url(../assets/landing/footer-image.png) center / cover;
   background-repeat: no-repeat;
-  background-size: cover;
+  padding: 2rem 0;
+}
+
+#landing-contact-footer h3 {
+  margin: 0 auto;
+  max-width: 50%;
+}
+
+#landing-contact-footer h4 {
+  margin: 2rem auto;
+  max-width: 50%;
 }
 
 /* mobile landing page footer */
 @media screen and (max-width: 600px) {
   #landing-contact-footer {
     background: #333;
-    height: 100%;
   }
 
   #landing-contact-footer h4 {
     font-size: 1.5rem;
-    max-width: 90%;
+    max-width: 80%;
   }
 }
 
@@ -568,8 +587,14 @@ footer {
   background: url(../assets/about-contact/about-hero-image.png) center / cover; background-repeat: no-repeat;
 }
 
+#about-contact-text {
+  margin: 0 auto;
+  padding: 25vh 0;
+}
+
 #about-contact-header h1, #about-contact-header h2 {
   margin: 1rem 10%;
+  max-width: 50%;
 }
 
 #about-contact-header h3 {
@@ -585,23 +610,24 @@ footer {
 
 /* tablet header */
 @media screen and (max-width: 900px) {
-  #about-contact-header {
-    background-position: right;
-    height: 400px;
+  #about-contact-text {
+    padding: 12.5vh 0;
   }
 
   #about-contact-header h1 {
     font-size: 2rem;
+    max-width: 60%;
   }
 
   #about-contact-header h2 {
     font-size: 1.25rem;
+    max-width: 60%;
   }
 
   #about-contact-header h3 {
     font-size: 1.25rem;
     line-height: 2rem;
-    max-width: 90%;
+    max-width: 60%;
   }
 }
 
@@ -609,15 +635,16 @@ footer {
 @media screen and (max-width: 600px) {
   #about-contact-header {
     background-position: right;
-    height: 250px;
   }
 
   #about-contact-header h1 {
     font-size: 2rem;
+    max-width: 100%;
   }
 
   #about-contact-header h2 {
     font-size: 1.25rem;
+    max-width: 100%;
   }
 
   #about-contact-header h3 {
@@ -634,7 +661,7 @@ footer {
 
 /******************** about page styles ********************/
 .about-intro {
-  margin: 2rem;
+  margin: 10vh auto 5vh;
   text-align: center;
 }
 
@@ -689,7 +716,7 @@ footer {
 .about-container {
   display: grid;
   grid-auto-rows: minmax(200px, auto);
-  grid-gap: 1rem;
+  grid-gap: 2rem;
   grid-template-areas:
   "bg musician"
   "xp-and-transition tools-and-tech"
@@ -697,6 +724,7 @@ footer {
   "the-process outside-design";
   grid-template-columns: 6fr 4fr;
   margin: 2rem 10%;
+  padding-bottom: 10vh;
 }
 
 .background {
@@ -723,6 +751,9 @@ footer {
   grid-area: xp-and-transition;
 }
 
+.experience-and-transition h3 {
+}
+
 .the-process {
   grid-area: the-process;
 }
@@ -739,7 +770,7 @@ footer {
 
 .quote-block {
   grid-area: quote-block;
-  margin: 3rem auto;
+  margin: 0 auto;
   text-align: center;
 }
 
