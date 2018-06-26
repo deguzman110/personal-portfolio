@@ -421,6 +421,10 @@ header .btn {
     "mobile-image"
     "mobile-link";
   }
+
+  #desktop-prototype {
+    margin-bottom: 2rem;
+  }
 }
 
 @media screen and (max-width: 600px) {
