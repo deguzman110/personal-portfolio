@@ -9,7 +9,7 @@ header {
 /* div sizing */
 .front-end-development > div {
   margin: 0 auto;
-  padding: 2rem 15%;
+  padding: 10vh 15%;
   width: 100%;
 }
 
