@@ -17,7 +17,7 @@ header .btn {
 }
 
 .header-container {
-  padding: 1rem;
+  padding: 10vh 0;
 }
 
 /* typography */
@@ -27,6 +27,12 @@ h3, h4, h5, li, p {
 
 h3 {
   padding-bottom: 1rem;
+}
+
+.project-process > div h3, #conclusion-header {
+  font-size: 2.5rem;
+  font-weight: 700;
+  padding-bottom: 2rem;
 }
 
 h4 {
@@ -71,8 +77,8 @@ li {
 
 /* tablet header */
 @media screen and (max-width: 900px) {
-  header {
-    height: 400px;
+  .header-container {
+    padding: 5vh 0;
   }
 
   header h1 {
@@ -85,16 +91,12 @@ li {
     line-height: 1.5rem;
     max-width: 80%;
   }
-
-  .project-image {
-    display: none;
-  }
 }
 
 /* mobile header */
 @media screen and (max-width: 600px) {
-  header {
-    height: 250px;
+  .header-container {
+    padding: 2.5vh 0;
   }
 
   header h1 {
@@ -142,6 +144,7 @@ li {
 
 .overview > div {
   background: #f0f0f0;
+  padding: 5vh 0;
 }
 
 .overview h3, .overview h4, .overview li, .overview p {
@@ -165,22 +168,25 @@ li {
 
 /* problem & solution */
 .problem h3, .solution h3 {
-  margin: 0 5% 1rem 5%;
+  margin: 1rem auto;
+  max-width: 80%;
   padding-bottom: 0;
 }
 
 .problem h5, .solution h5 {
   color: #999;
   font-size: 1rem;
-  margin: 1rem 5% 0 5%;
+  margin: 1rem auto;
+  max-width: 80%;
 }
 
 .problem p, .solution p {
   line-height: 2.5rem;
-  margin: 1rem 5%;
+  margin: 1rem auto;
+  max-width: 80%;
 }
 
-/* tablet overview */
+/* tablet & mobile overview */
 @media screen and (max-width: 900px) {
   .overview {
     grid-auto-rows: minmax(20px, auto);
@@ -195,61 +201,24 @@ li {
   }
 
   .problem h3, .problem h5, .problem p, .solution h3, .solution h5, .solution p {
-    margin: 0 auto;
-    max-width: 80%;
+    max-width: 70%;
   }
 }
 
 /* projects - general styling */
-.project-process > div, .information-architecture > div, .visual-design-branding > div, .clickable-prototype-testing, .conclusion {
+.project-process > div, .information-architecture > div, .visual-design-branding, .clickable-prototype-testing, .conclusion {
   margin: 0 auto;
-  padding: 2rem 15%;
+  padding: 10vh 15%;
   width: 100%;
+}
+
+.branding {
+  padding-top: 10vh;
 }
 
 .btn {
   display: block;
   margin: 2rem auto 0;
-}
-
-/* projects - typography */
-h3, h4, h5, li, p {
-  color: #fff;
-}
-
-h3 {
-  padding-bottom: 1rem;
-}
-
-h4 {
-  padding-bottom: 1.25rem;
-}
-
-h5 {
-  font-size: 1.10rem;
-  font-weight: 600;
-  letter-spacing: 1.5px;
-  line-height: 2rem;
-}
-
-p {
-  line-height: 2rem;
-}
-
-li {
-  font-weight: 600;
-  line-height: 2rem;
-  margin: 1rem auto;
-  text-indent: 3%;
-}
-
-.conclusion h3, .conclusion h5, .conclusion li, .conclusion p {
-  color: #000;
-}
-
-.emphasized {
-  font-style: italic;
-  font-weight: 700;
 }
 
 /*** conclusion section ***/

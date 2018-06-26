@@ -11,12 +11,10 @@ header .btn {
   margin: 1rem auto;
 }
 
-@media screen and (max-width: 600px) {
-  #desktop-header-btn {
-    display: none;
-  }
+.project-image img {
+  max-height: 100vh;
+  max-width: 60vw;
 }
-
 /* compettive analysis */
 .competitive-analysis {
   background: linear-gradient(rgba(52,112,117,1), rgba(52,112,117,0.75));
@@ -85,11 +83,12 @@ header .btn {
   display: grid;
   grid-auto-rows: minmax(20px, auto);
   grid-gap: 1rem;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr;
   grid-template-areas:
-  "personas-header ."
-  "personas-body personas-image"
-  "personas-button personas-button";
+  "personas-header"
+  "personas-image"
+  "personas-body"
+  "personas-button";
   margin: 1rem;
 }
 
@@ -110,7 +109,6 @@ header .btn {
 #personas-image {
   grid-area: personas-image;
   margin: 0 auto;
-  width: 425px;
 }
 
 #personas-button {
@@ -128,12 +126,16 @@ header .btn {
     "personas-button";
     margin: 1rem;
   }
+
+  #personas-image {
+    max-width: 90%;
+  }
 }
 
 /* mobile personas */
 @media screen and (max-width: 600px) {
   #personas-image {
-    max-width: 90%;
+    display: none;
   }
 }
 
@@ -143,7 +145,7 @@ header .btn {
 }
 
 #user-stories-button {
-  margin: 1rem auto;
+  margin: 2rem auto;
 }
 
 .user-flow-images {
@@ -190,22 +192,33 @@ header .btn {
 
 .wireframe-images {
   display: grid;
-  grid-auto-rows: minmax(200px, auto);
+  grid-auto-rows: minmax(50px, auto);
   grid-gap: 1rem;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-areas:
-  "wf-01 wf-01 wf-01 wf-01"
-  "wf-02 wf-03 wf-04 wf-05";
+  "wf-01a wf-01b wf-01c wf-01d"
+  "cap-01 cap-01 cap-01 cap-01"
+  "wf-02 wf-03 wf-04 wf-05"
+  "cap-02 cap-02 cap-02 cap-02";
   margin: 2rem auto;
 }
 
-#wf-01, #wf-02, #wf-03, #wf-04, #wf-05, #hf-01, #hf-02, #hf-03, #hf-04 {
+#wf-01a, #wf-01b, #wf-01c, #wf-01d, #wf-02, #wf-03, #wf-04, #wf-05, #hf-01, #hf-02, #hf-03, #hf-04 {
   margin: 0 auto;
   max-width: 100%;
 }
 
-#wf-01 {
-  grid-area: wf-01;
+#wf-01a {
+  grid-area: wf-01a;
+}
+#wf-01b {
+  grid-area: wf-01b;
+}
+#wf-01c {
+  grid-area: wf-01c;
+}
+#wf-01d {
+  grid-area: wf-01d;
 }
 #wf-02 {
   grid-area: wf-02;
@@ -219,6 +232,13 @@ header .btn {
 #wf-05 {
   grid-area: wf-05;
 }
+#cap-01 {
+  grid-area: cap-01;
+}
+#cap-02 {
+  grid-area: cap-02;
+}
+
 
 /* tablet wireframes */
 @media screen and (max-width: 900px) {
@@ -243,11 +263,12 @@ header .btn {
 /* hi-fi mockups */
 .hifi-mockup-images {
   display: grid;
-  grid-auto-rows: minmax(200px, auto);
+  grid-auto-rows: minmax(50px, auto);
   grid-gap: 1rem;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-areas:
-  "hf-01 hf-02 hf-03 hf-04";
+  "hf-01 hf-02 hf-03 hf-04"
+  "cap-03 cap-04 cap-05 cap-06";
   margin: 2rem auto;
 }
 
@@ -262,6 +283,18 @@ header .btn {
 }
 #hf-04 {
   grid-area: hf-04;
+}
+#cap-03 {
+  grid-area: cap-03;
+}
+#cap-04 {
+  grid-area: cap-04;
+}
+#cap-05 {
+  grid-area: cap-05;
+}
+#cap-06 {
+  grid-area: cap-06;
 }
 
 /* tablet hi-fi mockups */
@@ -335,7 +368,6 @@ header .btn {
 /*** clickable prototype testing section ***/
 .clickable-prototype-testing {
   background: linear-gradient(rgba(51, 51, 51, 1),rgba(51, 51, 51, 0.75));
-  padding-bottom: 1rem;
 }
 
 .prototype {

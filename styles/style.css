@@ -101,6 +101,14 @@ h5 {
   letter-spacing: 0.25rem;
 }
 
+h6 {
+  color: #fff;
+  font-family: "Open Sans", sans-serif;
+  font-size: 0.875rem;
+  font-weight: 600;
+  margin: 0 auto;
+}
+
 p, ul {
   color: #000;
   font-family: "Open Sans", sans-serif;
@@ -417,12 +425,12 @@ footer {
 
 #blocjams {
   background: linear-gradient(to right, #5A2F53, #9E588A, #000000); grid-area: blocjams;
-  padding: 20vh 0;
+  padding: 10vh 0;
 }
 
 #briefcase {
   background: linear-gradient(rgba(52,112,117,1), rgba(52,112,117,0.5)); grid-area: briefcase;
-  padding: 20vh 0;
+  padding: 10vh 0;
 }
 
 /* Hidden until implemented
