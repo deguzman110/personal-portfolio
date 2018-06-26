@@ -243,13 +243,14 @@ header .btn {
 /* tablet wireframes */
 @media screen and (max-width: 900px) {
   .wireframe-images {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
     grid-template-areas:
-    "wf-01"
-    "wf-02"
-    "wf-03"
-    "wf-04"
-    "wf-05";
+    "wf-01a wf-01b"
+    "wf-01c wf-01d"
+    "cap-01 cap-01"
+    "wf-02 wf-03"
+    "wf-04 wf-05"
+    "cap-02 cap-02";
   }
 }
 
@@ -300,12 +301,12 @@ header .btn {
 /* tablet hi-fi mockups */
 @media screen and (max-width: 900px) {
   .hifi-mockup-images {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
     grid-template-areas:
-    "hf-01"
-    "hf-02"
-    "hf-03"
-    "hf-04";
+    "hf-01 hf-02"
+    "cap-03 cap-04"
+    "hf-03 hf-04"
+    "cap-05 cap-06";
   }
 }
 
@@ -385,10 +386,6 @@ header .btn {
   width: 100%;
 }
 
-#mobile-image, #desktop-link, #mobile-link {
-  max-width: 100%;
-}
-
 #desktop-image, #mobile-image {
   display: block;
   margin: 0 auto;
@@ -432,6 +429,19 @@ header .btn {
   }
 
   .prototype button {
+    width: 90%;
+  }
+}
+
+#pref-test-image {
+  display: block;
+  margin: 0 auto;
+  padding: 5vh 0;
+  width: 50%;
+}
+
+@media screen and (max-width: 900px) {
+  #pref-test-image {
     width: 90%;
   }
 }
