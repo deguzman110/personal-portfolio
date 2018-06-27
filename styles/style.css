@@ -278,7 +278,7 @@ footer {
 /******************** landing page styling ********************/
 /* hero image & header */
 #landing-header {
-  background: url(../assets/landing/landing-page-hero-image.png) center / cover;
+  background: url(../assets/landing/landing-page-hero-image.jpg) center / cover;
   background-repeat: no-repeat;
 }
 
@@ -563,7 +563,7 @@ footer {
 
 /* landing-page footer */
 #landing-contact-footer {
-  background: url(../assets/landing/footer-image.png) center / cover;
+  background: url(../assets/landing/footer-image.jpg) center / cover;
   background-repeat: no-repeat;
   padding: 2rem 0;
 }
@@ -592,7 +592,7 @@ footer {
 
 /******************** about & contact page styles ********************/
 #about-contact-header {
-  background: url(../assets/about-contact/about-hero-image.png) center / cover; background-repeat: no-repeat;
+  background: url(../assets/about-contact/about-hero-image.jpg) center / cover; background-repeat: no-repeat;
 }
 
 #about-contact-text {
