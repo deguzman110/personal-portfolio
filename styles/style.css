@@ -197,7 +197,7 @@ nav .icon {
 /* contact info */
 #landing-contact-footer, .contact-footer {
   display: inline-block;
-  padding: 2rem;
+  padding: 7.5vh 0;
   width: 100%;
 }
 
@@ -283,6 +283,7 @@ footer {
 }
 
 #intro-text {
+  height: 80vh;
   margin: 0 auto;
   padding: 25vh 0;
   max-width: 42%;
@@ -322,32 +323,25 @@ footer {
   }
 
   #mobile-intro-text {
-    display: inherit;
+    display: block;
+    height: 75vh;
     margin: 2rem auto;
-    padding: 10vh 0;
+    padding: 25vh 0;
     max-width: 70%;
   }
 
   #mobile-intro-text h1 {
-    padding-bottom: 1rem;
+    font-size: 3.5rem;
+    line-height: 4.5rem;
+    padding-bottom: 2rem;
   }
 }
 
 /* mobile landing page header */
 @media screen and (max-width: 600px) {
-
-  #landing-header nav {
-    margin-bottom: 0;
-  }
-
-  #landing-header h1, #landing-header h2 {
-    font-size: 1.5rem;
-    line-height: 2rem;
-  }
-
   #mobile-intro-text {
-    padding: 5vh 0;
-    max-width: 70%;
+    height: 77.5vh;
+    max-width: 90%;
   }
 }
 
@@ -485,7 +479,7 @@ footer {
 }
 
 .my-process h3 {
-  padding-bottom: 5vh;
+  padding: 5vh 0;
   text-align: center;
 }
 
@@ -501,6 +495,13 @@ footer {
   margin: 0 auto;
   max-width: 400px;
   text-align: center;
+}
+
+/* Max width on .my-process for hi-resoultion screens */
+@media screen and (min-width: 1440px) {
+  .my-process {
+    width: 1440px;
+  }
 }
 
 .process {
@@ -547,17 +548,25 @@ footer {
   }
 
   .process > div {
-    padding: 5vh;
+    padding-bottom: 10vh;
+  }
+
+  div.design-code {
+    padding-bottom: 5vh;
   }
 
   .my-process h5 {
     height: inherit;
   }
+
+  .my-process img {
+    margin: 2.5vh auto;
+  }
 }
 
 @media screen and (max-width: 600px) {
-  .my-process {
-    margin: 5vh auto;
+  .process > div p {
+    width: 90vw;
   }
 }
 
@@ -565,7 +574,6 @@ footer {
 #landing-contact-footer {
   background: url(../assets/landing/footer-image.jpg) center / cover;
   background-repeat: no-repeat;
-  padding: 2rem 0;
 }
 
 #landing-contact-footer h3 {
@@ -579,14 +587,19 @@ footer {
 }
 
 /* mobile landing page footer */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 900px) {
   #landing-contact-footer {
     background: #333;
   }
 
   #landing-contact-footer h4 {
-    font-size: 1.5rem;
-    max-width: 80%;
+    max-width: 70%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #landing-contact-footer h4 {
+    max-width: 90%;
   }
 }
 
@@ -847,7 +860,13 @@ footer {
 
 /******************** contact page styles ********************/
 .contact-information {
-  margin: 2rem 5%;
+  display: block;
+  margin: 5vh auto 2.5vh;
+  width: 40%;
+}
+
+.contact-information h3 {
+  padding-bottom: 1rem;
 }
 
 /* contact form */
@@ -860,21 +879,9 @@ footer {
 }
 
 @media screen and (max-width: 900px) {
-  .form input, .form textarea {
+  .contact-information, .form input, .form textarea {
     width: 80%;
   }
-}
-
-/* submit button */
-#submit {
-  background-color: #DE9B43;
-  border-style: none;
-  color: #fff;
-  height: 2.5rem;
-}
-
-#submit:hover {
-  color: #000;
 }
 
 /******************** thank you page styles ********************/
