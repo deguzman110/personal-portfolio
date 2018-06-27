@@ -249,6 +249,31 @@ footer {
   width: 24px;
 }
 
+.footer-icons svg {
+  margin-left: 3rem;
+  width: 24px;
+}
+
+.footer-icons svg:hover {
+  transform: scale(1.25);
+}
+
+#contact-svg:hover path {
+  fill: #DE9B43;
+}
+
+#linkedin-svg:hover path {
+  fill: #00A0DC;
+}
+
+#twitter-svg:hover path {
+  fill: #1DA1F2;
+}
+
+#github-svg:hover path {
+  fill: #24292E;
+}
+
 .copyright, .dark-copyright {
   color: #fff;
   float: left;
@@ -270,8 +295,13 @@ footer {
 }
 
 @media screen and (max-width: 450px) {
-  .footer-icons img {
-    margin-left: 0.75rem;
+  .copyright, .dark-copyright {
+    font-size: 0.75rem;
+  }
+  .footer-icons svg {
+    margin-left: 1rem;
+    width: 20px;
+    height: 20px;
   }
 }
 
@@ -692,7 +722,7 @@ footer {
   text-align: center;
 }
 
-.about-intro img {
+.about-intro svg {
   margin: 0 1.5rem;
   height: 24px;
   width: 24px;
