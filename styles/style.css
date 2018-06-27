@@ -499,12 +499,12 @@ footer {
 
 /* my process */
 .my-process {
-  margin: 15vh auto;
+  margin: 20vh auto;
 }
 
 .my-process img {
   display: grid;
-  margin: 5vh auto;
+  margin: 1rem auto;
   width: 96px;
 }
 
@@ -584,7 +584,7 @@ footer {
   }
 
   .process > div {
-    padding-bottom: 10vh;
+    padding-bottom: 5vh;
   }
 
   div.design-code {
@@ -594,15 +594,15 @@ footer {
   .my-process h5 {
     height: inherit;
   }
-
-  .my-process img {
-    margin: 2.5vh auto;
-  }
 }
 
 @media screen and (max-width: 600px) {
+  .process > div {
+    padding-bottom: 2.5vh;
+  }
+
   .process > div p {
-    width: 90vw;
+    max-width: 90vw;
   }
 }
 
