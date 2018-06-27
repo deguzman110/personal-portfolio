@@ -469,7 +469,7 @@ footer {
 
 /* my process */
 .my-process {
-  margin: 10vh auto;
+  margin: 15vh auto;
 }
 
 .my-process img {
@@ -479,7 +479,7 @@ footer {
 }
 
 .my-process h3 {
-  padding: 5vh 0;
+  padding: 0 0 5vh;
   text-align: center;
 }
 
@@ -501,6 +501,12 @@ footer {
 @media screen and (min-width: 1440px) {
   .my-process {
     width: 1440px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .my-process {
+    margin: 10vh auto 5vh;
   }
 }
 
