@@ -33,6 +33,9 @@ header {
 }
 
 /*** user stories ***/
+.project-process > div p, .project-process > div ul {
+  width: 100%;
+}
 .user-stories {
   background: linear-gradient(#9E588A, #333333);
 }
