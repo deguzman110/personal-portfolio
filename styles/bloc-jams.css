@@ -6,11 +6,30 @@ header {
   height: 100%;
 }
 
+.project-image img {
+  max-height: 50vh;
+  max-width: 80vw;
+}
+
 /* div sizing */
 .front-end-development > div {
   margin: 0 auto;
-  padding: 10vh 15%;
-  width: 100%;
+  padding: 0 15vw 10vh;
+  width: 70%;
+}
+
+/* tablet div sizing */
+@media screen and (max-width: 900px) {
+  .front-end-development > div {
+    width: 100%;
+  }
+}
+
+/* mobile div sizing */
+@media screen and (max-width: 600px) {
+  .front-end-development > div {
+    padding: 0 5vw 10vh;
+  }
 }
 
 /*** user stories ***/

@@ -6,7 +6,7 @@ h1 {
 
 header h3 {
   margin: 1rem auto;
-  max-width: 70%;
+  max-width: 50%;
   padding: 0;
   text-align: center;
 }
@@ -89,7 +89,7 @@ li {
   header h3 {
     font-size: 1.25rem;
     line-height: 1.5rem;
-    max-width: 80%;
+    max-width: 70%;
   }
 }
 
@@ -186,7 +186,7 @@ li {
   max-width: 80%;
 }
 
-/* tablet & mobile overview */
+/* tablet overview */
 @media screen and (max-width: 900px) {
   .overview {
     grid-auto-rows: minmax(20px, auto);
@@ -205,11 +205,23 @@ li {
   }
 }
 
+/* mobile overview */
+@media screen and (max-width: 600px) {
+  .problem h3, .problem h5, .problem p, .solution h3, .solution h5, .solution p {
+    max-width: 90%;
+  }
+}
+
 /* projects - general styling */
 .project-process > div, .information-architecture > div, .visual-design-branding, .clickable-prototype-testing, .conclusion {
   margin: 0 auto;
-  padding: 10vh 15%;
+  padding: 10vh 20vw;
   width: 100%;
+}
+
+.competitive-analysis h3, .competitive-analysis h4, .project-process > div p, .project-process > div h5, .project-process > div ul, .user-research h4, .personas h4, .information-architecture > div h4, .information-architecture > div h5, .information-architecture > div p, .information-architecture > div ul, .wireframes h4, .wireframes p, .clickable-prototype-testing h4, .clickable-prototype-testing p, .clickable-prototype-testing ul {
+  width: 50%;
+  margin: 0 auto;
 }
 
 .branding {
@@ -219,6 +231,13 @@ li {
 .btn {
   display: block;
   margin: 2rem auto 0;
+}
+
+/* mobile spacing (wider - 90% of width) */
+@media screen and (max-width: 600px) {
+  .project-process > div, .information-architecture > div, .visual-design-branding, .clickable-prototype-testing, .conclusion {
+    padding: 10vh 5vw;
+  }
 }
 
 /*** conclusion section ***/
