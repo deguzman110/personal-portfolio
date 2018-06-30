@@ -150,27 +150,41 @@ header .btn {
 
 .user-flow-images {
   display: grid;
-  grid-auto-rows: minmax(100px, auto);
+  grid-auto-rows: minmax(10px, auto);
   grid-gap: 1rem;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
   grid-template-areas:
-  "onboarding upload sign-in";
+  "onboarding sign-in"
+  "onboarding-text sign-in-text"
+  "upload upload"
+  "upload-text upload-text";
   margin: 1rem auto;
 }
 
 #onboarding, #sign-in, #upload {
   margin: 0 auto;
   max-width: 100%;
+  padding-top: 2rem;
 }
 
 #onboarding {
   grid-area: onboarding;
 }
+#onboarding-text {
+  grid-area: onboarding-text;
+}
 #sign-in {
   grid-area: sign-in;
 }
+#sign-in-text {
+  grid-area: sign-in-text;
+}
 #upload {
   grid-area: upload;
+  max-width: 30%;
+}
+#upload-text {
+  grid-area: upload-text;
 }
 
 /* tablet & mobile user flows */
@@ -179,9 +193,16 @@ header .btn {
     grid-template-columns: 1fr;
     grid-template-areas:
     "onboarding"
+    "onboarding-text"
     "sign-in"
-    "upload";
+    "sign-in-text"
+    "upload"
+    "upload-text";
     margin: 1rem auto;
+  }
+
+  #upload {
+    max-width: 70%;
   }
 }
 
@@ -336,7 +357,8 @@ header .btn {
   padding-top: 1rem;
 }
 
-#briefcase-branding h5 {
+#briefcase-branding h6 {
+  padding-top: 1rem;
   text-align: center;
 }
 
