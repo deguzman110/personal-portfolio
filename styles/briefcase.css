@@ -8,7 +8,7 @@ header {
 
 header .btn {
   display: block;
-  margin: 1rem auto;
+  margin: 2rem auto;
 }
 
 .project-image img {
@@ -109,10 +109,12 @@ header .btn {
 #personas-image {
   grid-area: personas-image;
   margin: 0 auto;
+  width: 30vw;
 }
 
 #personas-button {
   grid-area: personas-button;
+  margin: 1rem auto;
 }
 
 /* tablet personas */
@@ -128,7 +130,7 @@ header .btn {
   }
 
   #personas-image {
-    max-width: 90%;
+    width: 90%;
   }
 }
 
@@ -185,6 +187,7 @@ header .btn {
 }
 #upload-text {
   grid-area: upload-text;
+  padding-bottom: 1rem;
 }
 
 /* tablet & mobile user flows */
@@ -285,7 +288,7 @@ header .btn {
 /* hi-fi mockups */
 .hifi-mockup-images {
   display: grid;
-  grid-auto-rows: minmax(50px, auto);
+  grid-auto-rows: minmax(0, auto);
   grid-gap: 1rem;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-areas:
@@ -418,7 +421,7 @@ header .btn {
 }
 
 #desktop-link, #mobile-link {
-  margin-top: 2rem;
+  margin: 3rem auto 2rem;
 }
 
 #desktop-image {
@@ -459,19 +462,107 @@ header .btn {
   }
 }
 
-#pref-test-image {
-  display: block;
+.pref-test {
+  display: grid;
+  grid-auto-rows: minmax(0px, auto);
+  grid-gap: 1rem;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas:
+  "pref-test-01-header pref-test-01-header"
+  "pref-test-01-desc pref-test-01-desc"
+  "pref-test-01-percentage pref-test-01-percentage"
+  "pref-test-01a pref-test-01b"
+  "pref-test-01-results pref-test-01-results"
+  "pref-test-02-header pref-test-02-header"
+  "pref-test-02-desc pref-test-02-desc"
+  "pref-test-02-percentage pref-test-02-percentage"
+  "pref-test-02a pref-test-02b"
+  "pref-test-02-results pref-test-02-results"
+  "pref-test-link pref-test-link";
+}
+
+.pref-test img {
+  width: 100%;
+}
+
+#pref-test-01-header {
+  grid-area: pref-test-01-header;
+  text-decoration: underline;
+}
+#pref-test-01-desc {
+  grid-area: pref-test-01-desc;
+}
+#pref-test-01-percentage {
+  grid-area: pref-test-01-percentage;
+}
+#pref-test-01-percentage-desc {
+  grid-area: pref-test-01-percentage-desc;
+}
+#pref-test-image-01a {
+  grid-area: pref-test-01a;
+}
+#pref-test-image-01b {
+  grid-area: pref-test-01b;
+}
+#pref-test-01-results {
+  grid-area: pref-test-01-results;
+}
+
+#pref-test-02-header {
+  grid-area: pref-test-02-header;
+  padding-top: 2rem;
+  text-decoration: underline;
+}
+#pref-test-02-desc {
+  grid-area: pref-test-02-desc;
+}
+#pref-test-02-percentage {
+  grid-area: pref-test-02-percentage;
+}
+#pref-test-02-percentage-desc {
+  grid-area: pref-test-02-percentage-desc;
+}
+#pref-test-image-02a {
+  grid-area: pref-test-02a;
   margin: 0 auto;
-  padding: 5vh 0;
   width: 50%;
 }
-
-@media screen and (max-width: 900px) {
-  #pref-test-image {
-    width: 90%;
-  }
+#pref-test-image-02b {
+  grid-area: pref-test-02b;
+  margin: 0 auto;
+  width: 50%;
+}
+#pref-test-02-results {
+  grid-area: pref-test-02-results;
 }
 
+#pref-test-link {
+  grid-area: pref-test-link;
+}
+
+@media screen and (max-width: 600px) {
+  .pref-test {
+    display: grid;
+    grid-auto-rows: minmax(0px, auto);
+    grid-gap: 1rem;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+    "pref-test-01-header"
+    "pref-test-01-desc"
+    "pref-test-01-percentage"
+    "pref-test-01a"
+    "pref-test-01b"
+    "pref-test-01-results"
+    "pref-test-02-header"
+    "pref-test-02-desc"
+    "pref-test-02-percentage"
+    "pref-test-02a"
+    "pref-test-02b"
+    "pref-test-02-results"
+    "pref-test-link";
+  }
+
+}
 /*** conclusion section ***/
 .conclusion {
   display: grid;

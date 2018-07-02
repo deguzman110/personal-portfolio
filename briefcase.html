@@ -36,7 +36,7 @@
         <h1>Briefcase</h1>
         <h3>Briefcase is a cloud-based storage service that utilizes collaboration and presentation tools to increase productivity for the modern-day worker.</h3>
         <div class="project-image">
-          <img src="images/briefcase/briefcase-collage-hero-image.png" alt="Briefcase Image">
+          <img src="images/briefcase/briefcase-hero-image.png" alt="Briefcase Image">
         </div>
         <a id="desktop-header-btn" href="https://projects.invisionapp.com/share/QMLFFESRB6Z#/screens/284261121" class="btn" target="_blank">View Prototype</a>
       </div>
@@ -101,7 +101,7 @@
           </div>
           <p>To create a cloud-based storage service, I began by analyzing current existing services- Google Drive, Dropbox, and Box through SWOT Analysis. I also reviewed the user flows of common tasks between the services, which were onboarding, saving an item (uploading/adding an item), and organizing an item. Through a SWOT Analysis of these potential competitors, I recognized common patterns in user flows, which helped to make their products more user-friendly. However, I also recognized areas where flows or features can be improved and optimized.</p>
           <br>
-          <h5>Areas Worth Consideration:</h5>
+          <p class="bold-underlined">Areas Worth Consideration:</p>
           <ul>
             <li>Amount of free space</li>
             <li>Convenience</li>
@@ -117,17 +117,24 @@
           <div class="pie-chart-container">
             <canvas id="userResearchChart"></canvas>
           </div>
-          <p>81% of respondents utilize cloud storage services for personal and/or business/school use while 19% do not, preferring to use USB or external hard drives due to security/privacy concerns.</p>
+          <h4 class="percentage">81%</h4><p>of respondents utilize cloud storage services for personal and/or business/school use. Those that do not prefer to use USB or external hard drives due to security/privacy concerns.</p>
           <div class="bar-chart-container">
             <canvas id="userResearchBreakdown"></canvas>
           </div>
-          <h5>Of the respondents that do utilize cloud storage services:</h5>
+          <!-- <h6>Of the respondents that do utilize cloud storage services:</h6>
           <ul>
-            <li> 83% utilize Google Drive</li>
+            <li>83% utilize Google Drive</li>
             <li>61% use Dropbox and iCloud (tie)</li>
             <li>27.8% use OneDrive</li>
-          </ul>
-          <p>Convenience and need for space were the two major reasons people utilize cloud storage services.</p>
+          </ul> -->
+          <h4 class="percentage">83%</h4>
+          <p>of respondents utilize Google Drive</p>
+          <h4 class="percentage">61%</h4>
+          <p>use Dropbox and/or iCloud (tie)</p>
+          <h4 class="percentage">27.8%</h4>
+          <p>use OneDrive</p>
+          <br>
+          <p><i>Convenience</i> and <i>need for space</i> were the two major reasons people utilize cloud storage services.</p>
           <a href="https://goo.gl/forms/qb2cnPhFPle2sub43" class="btn" target="_blank">View Survey</a>
         </div>
 
@@ -141,7 +148,7 @@
             <li>A working father, looking to centralize his work securely</li>
           </ul>
           <br>
-          <h5>Key goals from these personas include:</h5>
+          <p class="bold-underlined">Key goals from these personas include:</p>
           <ul>
             <li> Increasing productivity</li>
             <li> Convenience when accessing content across devices</li>
@@ -158,7 +165,7 @@
           <h4>User Stories & Flows</h4>
           <p>With the user personas in mind, I began mapping out the user stories for our product, which began with the initial name of <span class="emphasized">BlocBox</span>.</p>
           <br>
-          <h5>Some of the key high-priority user stories included:</h5>
+          <p class="bold-underlined">Some of the key high-priority user stories included:</p>
           <ul>
             <li>The onboarding process for a new user</li>
             <li>Sign in process for a returning user</li>
@@ -196,7 +203,6 @@
             <img id="wf-05" src="images/briefcase/wireframe-05.png">
             <h6 id="cap-02">Second sketch iterations of Blocbox</h6>
           </div>
-          <br>
           <p>The wireframes were eventually further expanded and detailed within Balsamiq to give some insight to potential sizing of fonts, spacing of icons, logos, and more. <i>Wireframes are available for review upon request.</i> The first high-fidelity mockups were then created in Sketch with some graphic elements, but no branding established. Final mockups were created in Figma.</p>
           <div class="hifi-mockup-images">
             <img id="hf-01" src="images/briefcase/hifi-01.png">
@@ -240,19 +246,29 @@
             <a href="https://projects.invisionapp.com/share/DULFFRECK73#/screens" class="btn" id="mobile-link" target="_blank">View Mobile Prototype</a>
           </span>
         </div>
-        <br>
         <h4>Preference Testing</h4>
-        <p>Preference Testing was conducted on a few subtle items within my mockups regarding use of color, images, and overall design. Tests were conducted to test the following:</p>
-        <ul>
-          <li>Onboarding page design</li>
-          <li>Mobile dropdown menu design</li>
-          <li>Settings screen design</li>
-        </ul>
-        <img id="pref-test-image" src="images/briefcase/preference-test-image.png">
-        <div class="preference-testing">
+        <p>Preference Testing was conducted on a few subtle items within my mockups regarding use of color, images, and overall design. Items tested include the <i>Onboarding page design</i> and the <i>Mobile dropdown menu design</i>.
+        <br>
+        <br>
+        <br>
+        <div class="pref-test">
+          <!-- Preference Test 01 -->
+          <h4 id="pref-test-01-header">Preference Test I: Onboarding Page Design</h4>
+          <p id="pref-test-01-desc">The first round of preference testing was to test the use of a background image on the onboarding/sign-in page.</p>
+          <h4 id="pref-test-01-percentage"><span id="percentage">78.57%</span> of participants preferred the use of a background image.</h4>
+          <img id="pref-test-image-01a" src="images/briefcase/pref-test-01a.png">
+          <img id="pref-test-image-01b" src="images/briefcase/pref-test-01b.png">
+          <p id="pref-test-01-results">Upon concluding this test, the background image made the product more appealing and made the content within the onboarding form/modal stand out more. However, the image was also very dark in color, and thus, prior to release, I found a different image to utilize.</p>
+
+          <!-- Preference Test 02 -->
+          <h4 id="pref-test-02-header">Preference Test II: Mobile Dropdown Menu Design</h4>
+          <p id="pref-test-02-desc">The second round of preference testing was to determine the best color to utilize on the mobile prototype.</p>
+          <h4 id="pref-test-02-percentage"><span id="percentage">81.82%</span> of participants preferred the use of the dark gray background.</h4>
+          <img id="pref-test-image-02a" src="images/briefcase/pref-test-02a.png">
+          <img id="pref-test-image-02b" src="images/briefcase/pref-test-02b.png">
+          <p id="pref-test-02-results">With the use of the dark gray background, the menu was a lot easier to read since it provided more contrast, especially with the "Sign Up" button. There were arguments that the teal color is more inviting and complements the header, but otherwise the dark gray was strongly preferred.</p>
           <a href="https://docs.google.com/document/d/141gF5X2nxqPrJ70orjPetOIlCRMq8PlfxGvnFwujLNM/edit?usp=sharing" class="btn" id="pref-test-link" target="_blank">View Tests & Summary</a>
-
-
+        </div>
       </section>
 
       <section class="conclusion">
@@ -260,7 +276,7 @@
         <div id="alt-logo">
           <img src="images/briefcase/briefcase-alt-logo.png">
         </div>
-        <div id="key-takeaways"><h5>Key Takeaways:</h5>
+        <div id="key-takeaways"><p class="bold-underlined">Key Takeaways:</p>
           <ul>
             <li>Prioritize User Stories & Flows</li>
             <li>Relate everything back to the user, and keep in mind the personas throughout the design process</li>

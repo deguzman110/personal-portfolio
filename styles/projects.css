@@ -54,7 +54,6 @@ li {
   font-weight: 600;
   line-height: 2rem;
   margin: 1rem auto;
-  text-indent: 3%;
 }
 
 .conclusion h3, .conclusion h5, .conclusion li, .conclusion p {
@@ -64,6 +63,18 @@ li {
 .emphasized {
   font-style: italic;
   font-weight: 700;
+}
+
+.bold-underlined {
+  text-decoration: underline;
+  font-weight: 700;
+}
+
+.percentage, #percentage {
+  color: #43A6DE;
+  font-size: 3rem;
+  font-weight: 700;
+  padding: 2rem 0 0;
 }
 
 /* project image */
@@ -184,6 +195,14 @@ li {
   line-height: 2.5rem;
   margin: 1rem auto;
   max-width: 80%;
+}
+
+/* high-rez overview */
+@media screen and (min-width: 1440px) {
+  .overview {
+    margin: 1rem auto;
+    width: 1440px;
+  }
 }
 
 /* tablet overview */
