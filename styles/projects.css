@@ -239,7 +239,7 @@ li {
 }
 
 .competitive-analysis h3, .competitive-analysis h4, .project-process > div p, .project-process > div h5, .project-process > div ul, .user-research h4, .personas h4, .information-architecture > div h4, .information-architecture > div h5, .information-architecture > div p, .information-architecture > div ul, .wireframes h4, .wireframes p, .clickable-prototype-testing h4, .clickable-prototype-testing p, .clickable-prototype-testing ul {
-  width: 50%;
+  width: 70%;
   margin: 0 auto;
 }
 

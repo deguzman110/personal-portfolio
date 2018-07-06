@@ -13,7 +13,7 @@ header .btn {
 
 .project-image img {
   max-height: 100vh;
-  max-width: 60vw;
+  max-width: 90vw;
 }
 /* compettive analysis */
 .competitive-analysis {
@@ -81,7 +81,7 @@ header .btn {
 
 .personas {
   display: grid;
-  grid-auto-rows: minmax(20px, auto);
+  grid-auto-rows: minmax(0px, auto);
   grid-gap: 1rem;
   grid-template-columns: 1fr;
   grid-template-areas:
@@ -109,7 +109,7 @@ header .btn {
 #personas-image {
   grid-area: personas-image;
   margin: 0 auto;
-  width: 30vw;
+  width: 70%;
 }
 
 #personas-button {
@@ -128,14 +128,17 @@ header .btn {
     "personas-button";
     margin: 1rem;
   }
-
-  #personas-image {
-    width: 90%;
-  }
 }
 
 /* mobile personas */
 @media screen and (max-width: 600px) {
+  .personas {
+    grid-template-areas:
+    "personas-header"
+    "personas-body"
+    "personas-button";
+  }
+
   #personas-image {
     display: none;
   }
