@@ -6,11 +6,6 @@ header {
   height: 100%;
 }
 
-header .btn {
-  display: block;
-  margin: 2rem auto;
-}
-
 .project-image img {
   max-height: 100vh;
   max-width: 90vw;
@@ -157,12 +152,14 @@ header .btn {
   display: grid;
   grid-auto-rows: minmax(10px, auto);
   grid-gap: 1rem;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr;
   grid-template-areas:
-  "onboarding sign-in"
-  "onboarding-text sign-in-text"
-  "upload upload"
-  "upload-text upload-text";
+  "onboarding"
+  "onboarding-text"
+  "sign-in"
+  "sign-in-text"
+  "upload"
+  "upload-text";
   margin: 1rem auto;
 }
 
@@ -174,19 +171,21 @@ header .btn {
 
 #onboarding {
   grid-area: onboarding;
+  width: 75%;
 }
 #onboarding-text {
   grid-area: onboarding-text;
 }
 #sign-in {
   grid-area: sign-in;
+  width: 75%;
 }
 #sign-in-text {
   grid-area: sign-in-text;
 }
 #upload {
   grid-area: upload;
-  max-width: 30%;
+  width: 50%;
 }
 #upload-text {
   grid-area: upload-text;
@@ -196,19 +195,7 @@ header .btn {
 /* tablet & mobile user flows */
 @media screen and (max-width: 900px) {
   .user-flow-images {
-    grid-template-columns: 1fr;
-    grid-template-areas:
-    "onboarding"
-    "onboarding-text"
-    "sign-in"
-    "sign-in-text"
-    "upload"
-    "upload-text";
-    margin: 1rem auto;
-  }
-
-  #upload {
-    max-width: 70%;
+    display: none;
   }
 }
 
@@ -221,12 +208,14 @@ header .btn {
   display: grid;
   grid-auto-rows: minmax(50px, auto);
   grid-gap: 1rem;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
   grid-template-areas:
-  "wf-01a wf-01b wf-01c wf-01d"
-  "cap-01 cap-01 cap-01 cap-01"
-  "wf-02 wf-03 wf-04 wf-05"
-  "cap-02 cap-02 cap-02 cap-02";
+  "wf-01a wf-01b"
+  "wf-01c wf-01d"
+  "cap-01 cap-01"
+  "wf-02 wf-03"
+  "wf-04 wf-05"
+  "cap-02 cap-02";
   margin: 2rem auto;
 }
 
@@ -266,21 +255,6 @@ header .btn {
   grid-area: cap-02;
 }
 
-
-/* tablet wireframes */
-@media screen and (max-width: 900px) {
-  .wireframe-images {
-    grid-template-columns: 1fr 1fr;
-    grid-template-areas:
-    "wf-01a wf-01b"
-    "wf-01c wf-01d"
-    "cap-01 cap-01"
-    "wf-02 wf-03"
-    "wf-04 wf-05"
-    "cap-02 cap-02";
-  }
-}
-
 /* mobile wireframes */
 @media screen and (max-width: 600px) {
   .wireframe-images {
@@ -293,10 +267,12 @@ header .btn {
   display: grid;
   grid-auto-rows: minmax(0, auto);
   grid-gap: 1rem;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
   grid-template-areas:
-  "hf-01 hf-02 hf-03 hf-04"
-  "cap-03 cap-04 cap-05 cap-06";
+  "hf-01 hf-02"
+  "cap-03 cap-04"
+  "hf-03 hf-04"
+  "cap-05 cap-06";
   margin: 2rem auto;
 }
 

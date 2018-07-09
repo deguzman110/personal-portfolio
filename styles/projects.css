@@ -5,7 +5,7 @@ h1 {
 }
 
 header h3 {
-  margin: 1rem auto;
+  margin: 0 auto;
   max-width: 50%;
   padding: 0;
   text-align: center;
@@ -13,7 +13,7 @@ header h3 {
 
 header .btn {
   display: block;
-  margin: 2rem auto 1rem;
+  margin: 2rem auto;
 }
 
 .header-container {
@@ -80,10 +80,6 @@ li {
 /* project image */
 .project-image {
   text-align: center;
-}
-
-.project-image img {
-  max-height: 344px;
 }
 
 /* tablet header */
