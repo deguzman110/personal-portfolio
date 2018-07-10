@@ -154,38 +154,38 @@ header {
   grid-gap: 1rem;
   grid-template-columns: 1fr;
   grid-template-areas:
-  "onboarding"
-  "onboarding-text"
-  "sign-in"
-  "sign-in-text"
   "upload"
   "upload-text";
   margin: 1rem auto;
+  width: 100%;
 }
 
 #onboarding, #sign-in, #upload {
   margin: 0 auto;
   max-width: 100%;
-  padding-top: 2rem;
 }
 
 #onboarding {
+  display: none;
   grid-area: onboarding;
-  width: 75%;
+  width: 100%;
 }
 #onboarding-text {
+  display: none;
   grid-area: onboarding-text;
 }
 #sign-in {
+  display: none;
   grid-area: sign-in;
-  width: 75%;
+  width: 100%;
 }
 #sign-in-text {
+  display: none;
   grid-area: sign-in-text;
 }
 #upload {
   grid-area: upload;
-  width: 50%;
+  max-width: 45vw;
 }
 #upload-text {
   grid-area: upload-text;
@@ -194,6 +194,25 @@ header {
 
 /* tablet & mobile user flows */
 @media screen and (max-width: 900px) {
+  #onboarding, #onboarding-text, #sign-in, #sign-in-text {
+    display: grid;
+    text-align: center;
+    width: 70vw;
+  }
+  #upload, #upload-text {
+    display: none;
+  }
+
+  .user-flow-images {
+    grid-template-areas:
+    "onboarding"
+    "onboarding-text"
+    "sign-in"
+    "sign-in-text";
+  }
+}
+
+@media screen and (max-width: 600px) {
   .user-flow-images {
     display: none;
   }
@@ -213,6 +232,7 @@ header {
   "wf-01a wf-01b"
   "wf-01c wf-01d"
   "cap-01 cap-01"
+  " . . "
   "wf-02 wf-03"
   "wf-04 wf-05"
   "cap-02 cap-02";
@@ -265,12 +285,13 @@ header {
 /* hi-fi mockups */
 .hifi-mockup-images {
   display: grid;
-  grid-auto-rows: minmax(0, auto);
+  grid-auto-rows: minmax(50px, auto);
   grid-gap: 1rem;
   grid-template-columns: 1fr 1fr;
   grid-template-areas:
   "hf-01 hf-02"
   "cap-03 cap-04"
+  " . . "
   "hf-03 hf-04"
   "cap-05 cap-06";
   margin: 2rem auto;
@@ -299,18 +320,6 @@ header {
 }
 #cap-06 {
   grid-area: cap-06;
-}
-
-/* tablet hi-fi mockups */
-@media screen and (max-width: 900px) {
-  .hifi-mockup-images {
-    grid-template-columns: 1fr 1fr;
-    grid-template-areas:
-    "hf-01 hf-02"
-    "cap-03 cap-04"
-    "hf-03 hf-04"
-    "cap-05 cap-06";
-  }
 }
 
 /* mobile hi-fi mockups */
@@ -443,19 +452,23 @@ header {
 
 .pref-test {
   display: grid;
-  grid-auto-rows: minmax(0px, auto);
+  grid-auto-rows: minmax(50px, auto);
   grid-gap: 1rem;
   grid-template-columns: 1fr 1fr;
   grid-template-areas:
+  "pref-test-header pref-test-header"
+  "pref-test-body pref-test-body"
   "pref-test-01-header pref-test-01-header"
   "pref-test-01-desc pref-test-01-desc"
   "pref-test-01-percentage pref-test-01-percentage"
   "pref-test-01a pref-test-01b"
+  "01a-cap 01b-cap"
   "pref-test-01-results pref-test-01-results"
   "pref-test-02-header pref-test-02-header"
   "pref-test-02-desc pref-test-02-desc"
   "pref-test-02-percentage pref-test-02-percentage"
   "pref-test-02a pref-test-02b"
+  "02a-cap 02b-cap"
   "pref-test-02-results pref-test-02-results"
   "pref-test-link pref-test-link";
 }
@@ -464,6 +477,14 @@ header {
   width: 100%;
 }
 
+#pref-test-header {
+  grid-area: pref-test-header;
+  padding-top: 5vh;
+}
+#pref-test-body {
+  grid-area: pref-test-body;
+  padding-bottom: 5vh;
+}
 #pref-test-01-header {
   grid-area: pref-test-01-header;
   text-decoration: underline;
@@ -522,21 +543,27 @@ header {
 @media screen and (max-width: 600px) {
   .pref-test {
     display: grid;
-    grid-auto-rows: minmax(0px, auto);
+    grid-auto-rows: minmax(5rem, auto);
     grid-gap: 1rem;
     grid-template-columns: 1fr;
     grid-template-areas:
+    "pref-test-header"
+    "pref-test-body"
     "pref-test-01-header"
     "pref-test-01-desc"
     "pref-test-01-percentage"
     "pref-test-01a"
+    "01a-cap"
     "pref-test-01b"
+    "01b-cap"
     "pref-test-01-results"
     "pref-test-02-header"
     "pref-test-02-desc"
     "pref-test-02-percentage"
     "pref-test-02a"
+    "02a-cap"
     "pref-test-02b"
+    "02b-cap"
     "pref-test-02-results"
     "pref-test-link";
   }

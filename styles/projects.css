@@ -230,7 +230,13 @@ li {
 /* projects - general styling */
 .project-process > div, .information-architecture > div, .visual-design-branding, .clickable-prototype-testing, .conclusion {
   margin: 0 auto;
-  padding: 10vh 20vw;
+  padding: 10vh 20vw 0;
+  width: 100%;
+}
+
+.information-architecture > .user-flow-images {
+  margin: 0 auto;
+  padding: 10vh;
   width: 100%;
 }
 
@@ -247,7 +253,11 @@ li {
 }
 
 .branding {
-  padding-top: 10vh;
+  padding: 10vh 0;
+}
+
+.pref-test {
+  padding-bottom: 10vh;
 }
 
 .btn {
