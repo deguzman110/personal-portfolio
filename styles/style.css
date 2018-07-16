@@ -52,8 +52,8 @@ button, .btn, a.btn, .form button, #submit {
   font-family: "Signika", sans-serif;
   font-size: 1.25rem;
   height: 2.5rem;
-  text-align: center;
   padding: 10px;
+  text-align: center;
   width: 90%;
   max-width: 350px;
 }
