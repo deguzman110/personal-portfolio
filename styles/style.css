@@ -171,6 +171,10 @@ nav .icon {
     width: 48px;
   }
 
+  .fa {
+    font-size: 24px;
+  }
+
   nav ul {
     display: none;
   }
@@ -189,7 +193,7 @@ nav .icon {
     color: #fff;
     display: inline;
     float: right;
-    padding: 1.25rem;
+    padding: 14px;
   }
 
   nav ul.opened {

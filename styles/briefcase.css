@@ -525,12 +525,12 @@ header {
 #pref-test-image-02a {
   grid-area: pref-test-02a;
   margin: 0 auto;
-  width: 50%;
+  width: 75%;
 }
 #pref-test-image-02b {
   grid-area: pref-test-02b;
   margin: 0 auto;
-  width: 50%;
+  width: 75%;
 }
 #pref-test-02-results {
   grid-area: pref-test-02-results;
