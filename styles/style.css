@@ -44,15 +44,17 @@ a:active, .nav-menu a:active {
 }
 
 button, .btn, a.btn, .form button, #submit {
+  align-items: center;
   background-color: #DE9B43;
   border-style: none;
   box-shadow: 0 0.25rem 0.25rem 0 rgba(0, 0, 0, 0.25);
+  display: flex;
   color: #fff;
   cursor: pointer;
   font-family: "Signika", sans-serif;
   font-size: 1.25rem;
-  height: 2.5rem;
-  padding: 10px;
+  justify-content: center;
+  padding: 0.70rem;
   text-align: center;
   width: 90%;
   max-width: 350px;
@@ -65,6 +67,23 @@ a.btn:hover, #submit:hover {
 
 a.btn:active, #submit:active {
   color: #000;
+}
+
+
+/* mobile buttons */
+@media screen and (max-width: 600px) {
+  button, .btn, a.btn, .form button {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  header .btn, #landing-contact-footer .btn, .contact-footer .btn, .projects > div .btn, div button {
+    width: 90%;
+  }
+
+  #submit {
+    max-width: 80%;
+  }
 }
 
 /*** Typography ***/
@@ -184,6 +203,10 @@ nav .icon {
     margin-left: 0;
   }
 
+  .nav-menu a:hover {
+    color: #43a6de;
+  }
+
   nav ul li {
     height: 20px;
     margin: 1rem auto;
@@ -241,8 +264,15 @@ nav .icon {
 }
 
 #landing-contact-footer .btn, .contact-footer .btn {
-  display: block;
+  display: flex;
   margin: 0 auto;
+}
+
+/* mobile contact button */
+@media screen and (max-width: 600px) {
+   {
+    max-width: 90%;
+  }
 }
 
 /* footer */
@@ -505,7 +535,7 @@ footer {
 }
 
 .projects > div .btn, div button {
-  display: block;
+  display: flex;
   margin: 0 auto;
 }
 
